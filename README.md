@@ -23,6 +23,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
+  Mijn focus gaat denk ik meer zijn op het responsive gedeelte, maar om mijzelf een beetje uit te dagen met de code wil ik kijken/experimenteren of het lukt om een onderdeel uit de surface plane te kiezen.
  
 </details>
 
@@ -37,19 +38,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  Het namaken van de website AirBnb of Mojo
-  Link: https://www.airbnb.nl/?sem_brand_erf=true&&c=.pi0.pk119549723_5008905443&ghost=true&gad_source=1&gclid=Cj0KCQiAoae5BhCNARIsADVLzZefsimXWmkqBjvkZvtZbCAkCtp0EpVulZLwL8jE4pk2vrwAE_x2wHsaAvJkEALw_wcB&gclsrc=aw.ds 
-
+  De concerten website: Mojo
   Mojo link: https://www.mojo.nl/ 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Homepagina van mojo (laptop)
+  <img src="readme-images/mojo-homepage.png" width="375px" alt="de homepagine met actuele informatie over mojo wat er nu speelt">
+  Homeoagina van mojo (telefoon)
+ <img src="readme-images/mojo-homepagina-telefoon.jpg" width="375px" alt="de homepagine met actuele informatie over mojo wat er nu speelt telefoon formaat">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
+  Geschiedenis pagina van mojo (laptop)
+  <img src="readme-images/mojo-geschiedenispagina.png" width="375px" alt="de geschiedenis pagina van mojo's">
+  Geschiedenis pagina mojo (telefoon)
+ <img src="readme-images/mojo-geschiedenis-telefoon.jpg" width="375px" alt="de geschiedenis pagina van mojo, telefoon formaat">
 </details>
 
 
