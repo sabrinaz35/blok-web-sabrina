@@ -45,13 +45,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Homepagina van mojo (laptop)
   <img src="readme-images/mojo-homepage.png" width="375px" alt="de homepagine met actuele informatie over mojo wat er nu speelt">
   Homeoagina van mojo (telefoon)
- <img src="readme-images/mojo-homepagina-telefoon.jpg" width="375px" alt="de homepagine met actuele informatie over mojo wat er nu speelt telefoon formaat">
+ <img src="readme-images/mojo-homepagina-telefoon.jpg" height="500px" alt="de homepagine met actuele informatie over mojo wat er nu speelt telefoon formaat">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Geschiedenis pagina van mojo (laptop)
   <img src="readme-images/mojo-geschiedenispagina.png" width="375px" alt="de geschiedenis pagina van mojo's">
   Geschiedenis pagina mojo (telefoon)
- <img src="readme-images/mojo-geschiedenis-telefoon.jpg" width="375px" alt="de geschiedenis pagina van mojo, telefoon formaat">
+ <img src="readme-images/mojo-geschiedenis-telefoon.jpg" height="500px" alt="de geschiedenis pagina van mojo, telefoon formaat">
 </details>
 
 
@@ -80,7 +80,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/dummy-plaatje.jpg" height="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
