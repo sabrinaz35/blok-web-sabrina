@@ -45,13 +45,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Homepagina van mojo (laptop)
   <img src="readme-images/mojo-homepage.png" width="375px" alt="de homepagine met actuele informatie over mojo wat er nu speelt">
   Homeoagina van mojo (telefoon)
- <img src="readme-images/mojo-homepagina-telefoon.jpg" height="500px" alt="de homepagine met actuele informatie over mojo wat er nu speelt telefoon formaat">
+ <img src="readme-images/mojo-homepagina-telefoon.jpg" height="375px" alt="de homepagine met actuele informatie over mojo wat er nu speelt telefoon formaat">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Geschiedenis pagina van mojo (laptop)
   <img src="readme-images/mojo-geschiedenispagina.png" width="375px" alt="de geschiedenis pagina van mojo's">
   Geschiedenis pagina mojo (telefoon)
- <img src="readme-images/mojo-geschiedenis-telefoon.jpg" height="500px" alt="de geschiedenis pagina van mojo, telefoon formaat">
+ <img src="readme-images/mojo-geschiedenis-telefoon.jpg" height="375px" alt="de geschiedenis pagina van mojo, telefoon formaat">
 </details>
 
 
