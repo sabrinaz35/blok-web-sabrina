@@ -59,10 +59,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
-  <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
+  <summary>uitwerken na test in 2<sup>e</sup> werkgroep 2</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+ Bevindingen van crea de website van Maja: https://www.crea.nl/ 
+ Bij een van de mogelijkheden bij november staan er pijltjes naar links en rechts die pakt hij helemaal niet.
+ bij de dropdown menu krijg je geen optie om het te openen, na wat proberen moet je er alleen op enter klikken.
+ Je moet wel weten wat level 3 heading betekent als je zo'n screenreader gebruikt.
+ Je kan bij de evenementen krijg je niet de optie om erop te klikken, terwijl dit wel kan. Hij leest alleen de woorden voor.
+ Hij benoemd de foto's niet.
+
+ <bold> WCAG checklist </bold>
+ <img src="readme-images/wcag-1.jpg" height="375px" alt="Pagina 1 van de wcag checklist">
+  <img src="readme-images/wcag-2.jpg" height="375px" alt="Pagina 2 van de wcag checklist">
+  <img src="readme-images/wcag-3.jpg" height="375px" alt="Pagina 3 van de wcag checklist">
+  <img src="readme-images/wcag-4.jpg" height="375px" alt="Pagina 4 van de wcag checklist">
+   <img src="readme-images/wcag5.jpg" height="375px" alt="Pagina 5 van de wcag 
+   checklist">
+  <img src="readme-images/wcag-6.jpg" height="375px" alt="Pagina 6 van de wcag checklist">
 
 </details>
 
