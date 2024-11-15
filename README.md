@@ -69,6 +69,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  Je kan bij de evenementen krijg je niet de optie om erop te klikken, terwijl dit wel kan. Hij leest alleen de woorden voor.
  Hij benoemd de foto's niet.
 
+ Bij mijn eigen site Mojo:
+ -Soms slaat hij bepaalde dingen gewoon over. 
+ -De ene keer pakt hij de images wel met de screenrecorder de andere keer niet.
+ -Heel handig dat hij ook de tekst van de logo's voorleest. 
+ -Wat praat het veel
+
  <bold> WCAG checklist </bold>
  <img src="readme-images/wcag-1.jpg" height="375px" alt="Pagina 1 van de wcag checklist">
   <img src="readme-images/wcag-2.jpg" height="375px" alt="Pagina 2 van de wcag checklist">
@@ -78,6 +84,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
    checklist">
   <img src="readme-images/wcag-6.jpg" height="375px" alt="Pagina 6 van de wcag checklist">
 
+
+reflectie: 
 </details>
 
 
