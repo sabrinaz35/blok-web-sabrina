@@ -81,7 +81,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
 ## Breakdownschets (week 1)
 
 <details>
