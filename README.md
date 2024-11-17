@@ -86,6 +86,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 reflectie: 
+Ik vond het best wel veel werk om in te vullen en sommige onderdelen van die WCAG checklist vond ik best wel lastig
+te vinden. Maar ik snap het nut er wel van in.
+
+Daarentegen vond ik die screenreader grappig om een keer mee gewerkt te hebben, maar ik vind
+wel dat hij heel veel voorleest. Volgens mij zijn er ook veel meer functies waarbij je gerichter dingen kan
+laten voorlezen, maar daar ben ik nog niet helemaal achter gekomen. 
 </details>
 
 
@@ -95,13 +101,18 @@ reflectie:
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdownschets.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/menu-breakdown.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" height="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/filter-breakdown.png" height="375px" alt="breakdown van nog een dynamisch deel">
+
+Reflectie: 
+Dit vond ik wel een handige opgave om te doen, want zo heb je meteen een overzicht over hoe jouw html pagina
+eruit moet komen te zien en dat is prettig. Soms vond ik het bij mojo best wel lastig om te benoemen of het logo nu 
+een afbeelding is of een tekst. En de datum bij elke event nu een footer is of gewoon een p. 
 
 </details>
 
