@@ -267,8 +267,8 @@ een afbeelding is of een tekst. En de datum bij elke event nu een footer is of g
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.mojo.nl/ Deze website ga ik namelijk namaken.
+  2. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input 
+  3. https://www.codecenter.nl/pr/tutorial/html/aflinks
 
 </details>

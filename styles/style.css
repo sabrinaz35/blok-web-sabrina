@@ -5,7 +5,15 @@
   box-sizing:border-box;  
 }
 
+:root {
+	--main-color: #083ade;
+	--main-text-color: white;
+}
 
+body {
+	background-color: var(--main-color);
+	color: var(--main-text-color);
+}
 
 
 
