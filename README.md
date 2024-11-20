@@ -48,10 +48,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  <img src="readme-images/mojo-homepagina-telefoon.jpg" height="375px" alt="de homepagine met actuele informatie over mojo wat er nu speelt telefoon formaat">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Geschiedenis pagina van mojo (laptop)
-  <img src="readme-images/mojo-geschiedenispagina.png" width="375px" alt="de geschiedenis pagina van mojo's">
-  Geschiedenis pagina mojo (telefoon)
- <img src="readme-images/mojo-geschiedenis-telefoon.jpg" height="375px" alt="de geschiedenis pagina van mojo, telefoon formaat">
+Detailpagina het evenement (laptop)
+ <img src="readme-images/detailpagina-robbie-williams.jpg" width="375px" alt="de detailpagina van het evenement robbie williams"> 
+
+ vanaf de telefoon
+  <img src="readme-images/robbie-williams-pagina.PNG" width="375px" alt="de detailpagina van het evenement robbie williams"> 
 </details>
 
 
@@ -128,16 +129,26 @@ een afbeelding is of een tekst. En de datum bij elke event nu een footer is of g
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Goed: de opdrachten die wij tijdens de les kregen over de verschillende onderwerpen gingen wel goed.
+
+  Wat slechter:
+  Toen ik mijn eigen html begon op te stellen was ik wat verward en wist ik sommige dingen niet meer goed terug te halen van vorig jaar. Zoals het gebruik van de ul en de sections, wanneer is het handig om dat te gebruiken. Zoals je hieronder kan zien zie je verschillende vlakken en in eerste instantie dacht ik dat dat allemaal sections waren, maar omdat het vaker terug komt en het lijkt ook op een lijst kon dat ook als een ul genoteerd worden.
+ <img src="readme-images/voorbeeld-voortgang-week1.png" height="375px" alt="Screenshot Mojo pagina.">
+
+  Wat ik nu hiervoor heb gedaan is het volgende
+   <img src="readme-images/voorbeeld2-voorlichting-code.png" height="375px" alt="Screenshot code een ul pagina.">
+  Ik heb een li in de ul gezet met daarin de a want alle items daarin zijn klikbaar. Is dit de juiste manier om dit te doen?
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Sabrina                 | Jeppe              | Rafi         | student 4        |
+  | ---                     | ---                | ---          | ---              |
+  | Ul/Sections             | en dit             | en ik dit    | en dan ik dat    |
+  | H boven img?            | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Fieldset voor de from   | ...                | ...          | ...              |
+  | links waar ik nu niks meer moet?   | ...                | ...          | ...              |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
