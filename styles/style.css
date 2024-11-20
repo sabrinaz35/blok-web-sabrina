@@ -28,3 +28,23 @@ body {
 	background-color: var(--background-color);
 	color: var(--main-text-color);
 }
+
+/* Waarom kan ik deze code niet zien in de dev tool? */
+ul:nth-of-type(2){
+	display: grid;
+	overflow-x:auto;
+  	overscroll-behavior-x:contain;
+}
+
+li {
+	list-style-type: none;
+}
+
+ul:nth-of-type(2) li {
+	display: flex;
+	flex-direction: column;
+	grid-row-gap: 48px;
+	grid-column-gap: 24px;
+	max-width: 480px;
+}
+
