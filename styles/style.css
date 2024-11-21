@@ -17,6 +17,8 @@
 	--background-color:#010b2c ;
 }
 
+
+
 /****************/
 /* JOUW STYLING */
 /****************/
@@ -27,21 +29,60 @@
 body {
 	background-color: var(--background-color);
 	color: var(--main-text-color);
+	font-family: 'Futura', Helvetica, Arial, sans-serif;
+
 }
 
 svg {
 	color: var(--color-background);
 }
 
+li {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: var(--main-text-color);
+}
+
 /* Waarom kan ik deze code niet zien in de dev tool? */
+/* Nav */
+header {
+	display:flex;
+	justify-content: space-between;
+}
+
+nav {
+	background-color: var(--main-color);
+	position: fixed ;
+	left:0;
+	right: 0;
+	top:0;
+	bottom:0;
+	 translate: -100% 0%; /*Dit zorgt ervoor dat die nav niet meer in beeld is */
+	font-size: ;
+}
+
+ul {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+header > button {
+	display: block;
+    height: 3px;
+    position: relative;
+    width: 27px;
+	cursor: pointer;
+}
+
 /* Body evenementen lijst */
+/* 
+
 ul:nth-child(2){
 	display: grid;
 	grid-template-columns:repeat(auto-fill, minmax(1fr, 1fr));
-}
-
-li {
-	list-style-type: none;
 }
 
 ul:nth-of-type(2) li {
@@ -54,4 +95,6 @@ ul:nth-of-type(2) li {
 section:first-of-type img{
 	max-width: 100vw;
 }
+*/
+
 

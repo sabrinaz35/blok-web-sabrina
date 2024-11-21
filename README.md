@@ -287,5 +287,6 @@ een afbeelding is of een tekst. En de datum bij elke event nu een footer is of g
   1. https://www.mojo.nl/ Deze website ga ik namelijk namaken.
   2. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input 
   3. https://www.codecenter.nl/pr/tutorial/html/aflinks
+  4. https://www.cdnfonts.com/futura-std-4.font 
 
 </details>
