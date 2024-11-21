@@ -154,10 +154,15 @@ een afbeelding is of een tekst. En de datum bij elke event nu een footer is of g
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - De bronnen voor de video's en imgs hoeven niet specifiek een bronvermelding bij, want het is voor een schoolopdracht.
+  - Er mag geen H in de ul, dus die moet ik aanpassen naar een p en dan stijlen als een h
+  - Om de fieldset hoeft geen article, want het is geen stuk tekst. Dus het kan zonder gebruikt worden, maar je kan er dus ook een ul van maken of een div gebruiken.
+  - Van al die items met verschillende evenementen moet ik dus een ul gebruiken en daaromheen een section maken, want er staat wel gewoon een heading in.
+  -  a>Hrefs die nergens naar lijden kan je leeg laten of een / erin zetten.
+  - Voor de footer en de icons die je daar van de social media heb kan je beter de svg's gebruiken, daardoor kan je die ook makkelijker animeren.
+  - als je video's wilt van youtube kan je de embed code kopieren van youtube erin zetten en dan heb je die te zien, vgm kan dit ook voor de spotify doen.
+  - In de css eerst de algemene styling en daarna gewoon de pagina van boven naar beneden erin zetten.
+  - Er moet een form om alle fieldsets heen
 
 </details>
 
