@@ -143,12 +143,13 @@ een afbeelding is of een tekst. En de datum bij elke event nu een footer is of g
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Sabrina                 | Jeppe              | Rafi         | student 4        |
-  | ---                     | ---                | ---          | ---              |
-  | Ul/Sections             | en dit             | en ik dit    | en dan ik dat    |
-  | H boven img?            | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | Fieldset voor de from   | ...                | ...          | ...              |
+  | Sabrina                            | Jeppe              | Rafi         | student 4        |
+  | ---                                | ---                | ---          | ---              |
+  | Ul/Sections                        | en dit             | Bronvermelden| en dan ik dat    |
+  | H boven img?                       | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Fieldset voor de from              | ...                | ...          | ...              |
   | links waar ik nu niks meer moet?   | ...                | ...          | ...              |
+  | Bronvermelden hoe precies?         | ...                | ...          | ...    
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
