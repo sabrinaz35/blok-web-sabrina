@@ -30,7 +30,6 @@ body {
 	background-color: var(--background-color);
 	color: var(--main-text-color);
 	font-family: 'Futura', Helvetica, Arial, sans-serif;
-
 }
 
 svg {
@@ -60,21 +59,36 @@ nav {
 	right: 0;
 	top:0;
 	bottom:0;
-	 translate: -100% 0%; /*Dit zorgt ervoor dat die nav niet meer in beeld is */
-	font-size: ;
+	transition: 3s;
+	translate: -100% 0%; /*Dit zorgt ervoor dat die nav niet meer in beeld is */
+	width: 100vw;
 }
 
-ul {
+.menuZichtbaar {
+	translate: 0% 0%;	
+}
+
+nav {
 	display: grid;
 	grid-template-columns: 1fr;
+	grid-column-start: 1;
+	height: 100vh;
+	grid-template-rows: 1fr 1fr;
+	text-transform: uppercase;
 }
 
 header > button {
 	display: block;
-    height: 3px;
+    height: 27px;
     position: relative;
     width: 27px;
 	cursor: pointer;
+}
+
+ul:nth-of-type(2)  {
+	display: flex;
+	justify-content: space-around;
+	align-items: end;
 }
 
 /* Body evenementen lijst */
