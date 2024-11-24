@@ -49,7 +49,7 @@ a {
 /* Nav */
 header {
 	display:flex;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 nav {
@@ -62,19 +62,23 @@ nav {
 	transition: 3s;
 	translate: -100% 0%; /*Dit zorgt ervoor dat die nav niet meer in beeld is */
 	width: 100vw;
+	text-transform: uppercase;
 }
 
 .menuZichtbaar {
 	translate: 0% 0%;	
+	height: 100vh;
+	overflow: hidden;
+	overscroll-behavior: contain;
 }
 
-nav {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-column-start: 1;
-	height: 100vh;
-	grid-template-rows: 1fr 1fr;
-	text-transform: uppercase;
+ul:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	height: 60vh;
+	justify-content: space-between;
+	font-weight: 600;
+	font-size: 20px;
 }
 
 header > button {
@@ -88,7 +92,6 @@ header > button {
 ul:nth-of-type(2)  {
 	display: flex;
 	justify-content: space-around;
-	align-items: end;
 }
 
 /* Body evenementen lijst */
