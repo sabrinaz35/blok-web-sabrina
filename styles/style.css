@@ -3,6 +3,7 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
 }
 
 /*********************/
@@ -34,10 +35,15 @@ body {
 
 svg {
 	color: var(--color-background);
+	/* width: 100%; */
 }
 
 li {
 	list-style-type: none;
+}
+
+ul {
+	padding: 0;
 }
 
 a {
@@ -51,43 +57,26 @@ header {
 	display:flex;
 	justify-content: center;
 	position: sticky; 
+	top: 0;
+	z-index: 2;
 }
 
-nav {
-	background-color: var(--main-color);
-	position: fixed ;
-	left:0;
-	right: 0;
-	top:0;
-	bottom:0;
-	transition: .2s ease-in;
-	translate: -100% 0%; /*Dit zorgt ervoor dat die nav niet meer in beeld is */
-	width: 100vw;
-	text-transform: uppercase;
-	overflow: hidden;
-}
+
 
 img {
 	width: 100%;
 }
 
-.menuZichtbaar {
+header nav nav.menuZichtbaar {
 	translate: 0% 0%;	
-	overflow: hidden;
-	overscroll-behavior: contain;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	font-weight: 600;
-	font-size: 30px;
-	text-wrap: wrap;
+
 }
 
-header button {
+header nav > button {
 	display: flex;
     position: absolute;
-	left: 1em;
-	top: 1em;
+	left: .5em;
+	top: .5em;
 	cursor: pointer;
 	width: 3rem;
 	gap: .5rem;
@@ -98,38 +87,137 @@ header button {
 	margin: 0 1rem;
 }
 
-header span {
+header nav span {
 	display: block;
 	width: 55%;
 	height: 2px;
-	color: var(--main-text-color);
+	background-color: var(--main-text-color);
 	font-size: 35px;
 }
 
-
-ul:nth-of-type(2) {
+header nav nav ul {
 	display: flex;
-	justify-content: space-around;
+}
+
+header nav nav ul:nth-of-type(1) div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem 0;
+}
+
+header nav nav ul:nth-of-type(1) div button {
+	margin-right: auto;
+	background-color: transparent;
+	border: none;
+	color: var(--color-background);
+}
+
+header nav nav ul:nth-of-type(1) div a {
+	margin-right: auto;
+	width: 25%;
+}
+
+header nav nav ul:nth-of-type(2) div a svg {
+	width: 100%;
+}
+
+header nav nav {
+	background-color: var(--main-color);
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	left:0;
+	right: 0;
+	top:0;
+	padding: 1rem;
+	bottom:0;
+	transition: .2s ease-in;
+	translate: -100% 0%; 
+	width: 100vw;
+	text-transform: uppercase;
+	overflow: hidden;
+	display: flex;
+
+}
+
+header nav nav ul:nth-of-type(1) {
+	margin-bottom: auto;
+	flex-direction: column;
+	margin-top: 0;
+}
+
+header nav nav ul:nth-of-type(2){
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
 }
 
 
-/* Body evenementen lijst */
+header nav nav ul:nth-of-type(2) li a {
+	width: 60%;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+}
 
-section {
+
+header nav nav ul:nth-of-type(2) li:nth-of-type(1) a svg {
+	fill: red;
+}
+
+header nav nav ul:nth-of-type(2) li a svg {
+	width: 100%;
+
+}
+
+
+
+/* Body evenementen lijst */
+ section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-section:nth-of-type(1){
-	display: grid;
+/* section:nth-of-type(1){
+	position: relative;
 }
 
-ul:nth-child(2){
+section:nth-of-type(1) a {
+	position: absolute;
+}
+
+section:nth-of-type(1) h2 {
+	position: absolute;
+}
+section:nth-of-type(1) p {
+	position: absolute;
+} */
+
+main > a:first-of-type {
+	position: relative;
+	display: block;
+	height: fit-content;
+}
+
+main > a:first-of-type h2 {
+	position: absolute;
+	bottom: 1rem;
+}
+main > a:first-of-type p {
+	position: absolute;
+	bottom: 0;
+}
+
+
+/* ul:nth-child(2){
 	padding-left: 0;
 	display: grid;
 	grid-template-columns:repeat(auto-fill, minmax(1fr, 1fr));
-}
+} 
+ */
 
 
 
