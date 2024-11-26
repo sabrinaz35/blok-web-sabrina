@@ -18,7 +18,10 @@
 	--background-color:#010b2c ;
 }
 
-
+@font-face {
+	font-family: 'futura';
+	src: url(fonts/futura.ttc);
+}
 
 /****************/
 /* JOUW STYLING */
@@ -27,10 +30,10 @@
 /* jouw code */
 
 /* Algemene styling */
-body {
+body, button {
 	background-color: var(--background-color);
 	color: var(--main-text-color);
-	font-family: 'Futura', Helvetica, Arial, sans-serif;
+	font-family: 'futura', Helvetica, Arial, sans-serif;
 }
 
 svg {
@@ -59,9 +62,13 @@ header {
 	position: sticky; 
 	top: 0;
 	z-index: 2;
+	padding: 1rem;
+	transition: .2s;
 }
 
-
+header.active {
+	background-color: var(--main-color);
+}
 
 img {
 	width: 100%;
@@ -76,7 +83,7 @@ header nav > button {
 	display: flex;
     position: absolute;
 	left: .5em;
-	top: .5em;
+	top: 2em;
 	cursor: pointer;
 	width: 3rem;
 	gap: .5rem;
@@ -175,13 +182,42 @@ header nav nav ul:nth-of-type(2) li a svg {
 
 
 /* Body evenementen lijst */
+/* Robbie Williams foto uiteindelijk moet het een slider worden */
  section {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-/* section:nth-of-type(1){
+main > a:first-of-type {
+	position: relative;
+	display: flex;
+	height: fit-content;
+	justify-content: center;
+}
+
+main > a:first-of-type h1 {
+	position: absolute;
+	bottom: 4rem;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+
+main > a:first-of-type p {
+	position: absolute;
+	bottom: 2rem;
+	font-weight: 100;
+}
+
+
+/* ul:nth-child(2){
+	padding-left: 0;
+	display: grid;
+	grid-template-columns:repeat(auto-fill, minmax(1fr, 1fr));
+} 
+ */
+ /* 
+ section:nth-of-type(1){
 	position: relative;
 }
 
@@ -196,29 +232,26 @@ section:nth-of-type(1) p {
 	position: absolute;
 } */
 
-main > a:first-of-type {
-	position: relative;
-	display: block;
-	height: fit-content;
+/* De form */
+main form {
+	background-color: var(--main-color);
+	margin: 1em;
+	transform: translateY(-2em);
 }
 
-main > a:first-of-type h2 {
-	position: absolute;
-	bottom: 2rem;
+main form fieldset, main form button {
+	border: none;
+	padding: 1em 1em 1em 1em;
 }
 
-main > a:first-of-type p {
-	position: absolute;
-	bottom: 1rem;
+main form button {
+	background-color: var(--main-color);
+	width: 100%;
+	font-size: 20px;
+	transition: .5s ease-in;
 }
 
-
-/* ul:nth-child(2){
-	padding-left: 0;
-	display: grid;
-	grid-template-columns:repeat(auto-fill, minmax(1fr, 1fr));
-} 
- */
-
-
-
+main form button:hover {
+	background-color: var(--color-background);
+	color: var(--main-color);
+}

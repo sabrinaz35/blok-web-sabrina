@@ -3,6 +3,7 @@ console.log("hi");
 
 
 // Tevoorschijn laten komen van het menu
+const headerEl = document.querySelector('header')
 const menuButton = document.querySelector("header nav:first-of-type button");
 let deNav = document.querySelector("header nav nav");
 
@@ -21,3 +22,11 @@ closeMenuButton.addEventListener("click", closeMenu);
 function closeMenu(){
     deNav.classList.remove("menuZichtbaar");
 }
+
+window.addEventListener('scroll', ()=>{
+    if (scrollY > 10){
+        headerEl.classList.add('active')
+    } else {
+        headerEl.classList.remove('active')
+    }
+}) 
