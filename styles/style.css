@@ -18,9 +18,11 @@
 	--background-color:#010b2c ;
 }
 
+/* https://font.download/font/futura-pt  */
+
 @font-face {
 	font-family: 'futura';
-	src: url(fonts/futura.ttc) format(ttc);
+	src: url(https://font.download/font/futura-pt) format(ttc);
 }
 
 /****************/
@@ -194,7 +196,6 @@ header nav nav ul:nth-of-type(2) li a svg {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 2rem 0 2rem 0;
 }
 
 main > a:first-of-type {
