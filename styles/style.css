@@ -20,7 +20,7 @@
 
 @font-face {
 	font-family: 'futura';
-	src: url(fonts/futura.ttc);
+	src: url(fonts/futura.ttc) format(ttc);
 }
 
 /****************/
@@ -52,6 +52,11 @@ ul {
 a {
 	text-decoration: none;
 	color: var(--main-text-color);
+}
+
+h2 {
+	font-size: 32px;
+	text-transform: uppercase;
 }
 
 /* Waarom kan ik deze code niet zien in de dev tool? */
@@ -120,12 +125,12 @@ header nav nav ul:nth-of-type(1) div button {
 	color: var(--color-background);
 }
 
-header nav nav ul:nth-of-type(1) div a {
+header nav nav ul:nth-of-type(1) div a{
 	margin-right: auto;
 	width: 25%;
 }
 
-header nav nav ul:nth-of-type(2) div a svg {
+header nav nav ul:nth-of-type(2) div a svg{
 	width: 100%;
 }
 
@@ -255,3 +260,39 @@ main form button:hover {
 	background-color: var(--color-background);
 	color: var(--main-color);
 }
+
+/* net aangekondigd */
+main section:nth-of-type(1) h2{
+	margin-bottom: 4rem;
+}
+
+main section:nth-of-type(1) ul{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 2rem;
+	grid-row-gap: 4rem;
+}
+
+
+/* wijder scherm */
+/* button zoeken aanpassen zodat die ook kleiner word */
+
+@media (width > 60em) {
+	/* De responsiveness van de form */
+	main form {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	main form fieldset {
+		display: flex;
+
+	}
+	/* De responsiveness van "net aangekondigd" */
+	main section:nth-of-type(1) ul {
+		grid-template-columns:repeat(3, 1fr);
+	}
+
+}
+
+/* Footer */
