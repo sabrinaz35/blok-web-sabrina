@@ -82,12 +82,39 @@
 				<input type="date" name="date" required minlength="4" maxlength="8" size="10" min="2021-03-01" max="2031-01-01" />
 			</fieldset>
 			<fieldset>
-				<label for="name">Kies een evenement</label>
-				<input type="text" name="name" required minlength="4" maxlength="8" size="10" />
+				<!-- https://css-tricks.com/dynamic-dropdowns/ voor de code van de dropdown -->
+				<select name="Kies een evenement">
+					<option selected value="base">Kies een evenement</option>
+					<option value="concerten">Concerten</option>
+					<option value="Festivals">Festivals</option>
+					<option value="Evenementen">Evenementen</option>
+				</select>
 			</fieldset>
 			<fieldset>
-				<label for="name">Kies een genre</label>
-				<input type="text" name="name" required minlength="4" maxlength="8" size="10" />
+				<select name="Kies Genre">
+					<option selected value="base">Kies een genre</option>
+					<option value="Reggae">Reggae</option>
+					<option value="Rock">Rock</option>
+					<option value="Singer Songwriter">Singer Songwriter</option>
+					<option value="Blues">Blues</option>
+					<option value="Comedy">Comedy</option>
+					<option value="Country">Country</option>
+					<option value="Dance">Dance</option>
+					<option value="Electronic">Electronic</option>
+					<option value="Hiphop">Hiphop</option>
+					<option value="Jazz">Jazz</option>
+					<option value="K-pop">K-pop</option>
+					<option value="Klassiek">Klassiek</option>
+					<option value="Metal">Metal</option>
+					<option value="Pop">Pop</option>
+					<option value="R&B">R&B</option>
+					<option value="Reggae">Reggae</option>
+					<option value="Rock">Rock</option>
+					<option value="Singer Songwriter">Singer Songwriter</option>
+					<option value="Soundtrack">Soundtrack</option>
+					<option value="World">World</option>
+					<option value="Other">other</option>
+				</select>
 			</fieldset>
 			<button>Zoeken</button>
 		</form>
@@ -172,23 +199,93 @@
 		<section>
 			<h2>Binnenkort live</h2>
 			<article>
-				<a href="">
+				<a href="/">
 					<img src="images/kygo-concert-mojo.jpg" alt="een foto van de zanger Kygo voor een oranje ">
 					<h3>Kygo</h3>
 					<p><time datetime="26 november 2024"></time></p>
 					<p>Ziggo dome - Amsterdam</p>
-					<button> > </button>
 				</a>
 			</article>
+			<article>
+				<a href="/">
+					<img src="images/jacob-collier-djesse-europe-uk-tour-2024.jpg" alt="een foto van de zanger jacob collier">
+					<h3>Jacob Collier</h3>
+					<p><time datetime="26 & 27 november 2024"></time></p>
+					<p>AFAS Live - Amsterdam</p>
+				</a>
+			</article>
+			<article>
+				<a href="/">
+					<img src="images/lady-blackbird-concert-mojo.jpg" alt="een foto van lady blackbird">
+					<h3>Lady Blackbird</h3>
+					<p><time datetime="27 november 2024"></time></p>
+					<p>Carre - Amsterdam</p>
+				</a>
+			</article>
+			<article>
+				<a href="/">
+					<img src="images/jonna-fraser-live.jpg" alt="een foto van Jonna Fraser">
+					<h3>Jonna Fraser</h3>
+					<p><time datetime="28 november 2024"></time></p>
+					<p>Ziggo Dome - Amsterdam</p>
+				</a>
+			</article>
+			<button><-</button>
+			<button>-></button>
 		</section>
 		<section>
 			<h2>Bekijk de agenda voor meer</h2>
 			<article>
-				<a href="">
-					<p><time datetime="17 nov."></time></p>
+				<a href="/">
+					<p><time datetime="17 november"></time>17 nov.</p>
 					<!-- Ik weet niet zeker of dit een h3 of h4 is aanpassen naar de juiste -->
 					 <h3>Wheel</h3>
 					 <p>013 - tilburg</p>
+					 <p>website</p>
+				</a>
+			</article>
+			<article>
+				<a href="/">
+					<p><time datetime="27 november"></time>27 nov.</p>
+					<!-- Ik weet niet zeker of dit een h3 of h4 is aanpassen naar de juiste -->
+					 <h3>Beast + Benighted + coffin feeder</h3>
+					 <p>013 - tilburg</p>
+					 <p>website</p>
+				</a>
+			</article>
+			<article>
+				<a href="/">
+					<p><time datetime="27 november"></time>27 nov.</p>
+					<!-- Ik weet niet zeker of dit een h3 of h4 is aanpassen naar de juiste -->
+					 <h3>Haevn</h3>
+					 <p>TrivoliVredenburg - Utrecht</p>
+					 <p>website</p>
+				</a>
+			</article>
+			<article>
+				<a href="/">
+					<p><time datetime="27 november"></time>27 nov.</p>
+					<!-- Ik weet niet zeker of dit een h3 of h4 is aanpassen naar de juiste -->
+					 <h3>Bob Vylan</h3>
+					 <p>Patronaat - Haarlem</p>
+					 <p>website</p>
+				</a>
+			</article>
+			<article>
+				<a href="/">
+					<p><time datetime="27 november"></time>27 nov.</p>
+					<!-- Ik weet niet zeker of dit een h3 of h4 is aanpassen naar de juiste -->
+					 <h3>My baby</h3>
+					 <p>Schouwburg Deventer - Deventer</p>
+					 <p>website</p>
+				</a>
+			</article>
+			<article>
+				<a href="/">
+					<p><time datetime="27 november"></time>27 nov.</p>
+					<!-- Ik weet niet zeker of dit een h3 of h4 is aanpassen naar de juiste -->
+					 <h3>S10</h3>
+					 <p>NTGent - Gent</p>
 					 <p>website</p>
 				</a>
 			</article>

@@ -15,7 +15,8 @@
 	--color-background:#eee;
 	--main-color: #083ade;
 	--main-text-color: white;
-	--background-color:#010b2c ;
+	--background-color:#010b2c;
+	--font: 'futura', Helvetica, Arial, sans-serif
 }
 
 /* https://font.download/font/futura-pt  */
@@ -35,7 +36,7 @@
 body, button {
 	background-color: var(--background-color);
 	color: var(--main-text-color);
-	font-family: 'futura', Helvetica, Arial, sans-serif;
+	font-family: var(--font);
 }
 
 main {
@@ -228,19 +229,15 @@ main form {
 main form fieldset, main form button {
 	border: none;
 	padding: 1em 1em 1em 1em;
+	transition: .5s ease-in;
 }
 
 main form button {
 	background-color: var(--main-color);
 	width: 100%;
 	font-size: 20px;
-	transition: .5s ease-in;
 }
 
-main form button:hover {
-	background-color: var(--color-background);
-	color: var(--main-color);
-}
 
 /* net aangekondigd */
 main section:nth-of-type(1) h2{
@@ -253,6 +250,22 @@ main section:nth-of-type(1) ul{
 	grid-column-gap: 2rem;
 	grid-row-gap: 4rem;
 }
+
+select {
+	border: none;
+	background-color: var(--main-color);
+	color: var(--main-text-color);
+	font-family: var(--font);
+	transition: .5s ease-in;
+}
+
+/* Hover instellingen */
+main form button:hover, select:hover {
+	background-color: var(--color-background);
+	color: var(--main-color);
+}
+
+
 
 
 /* wijder scherm */
@@ -273,15 +286,52 @@ main section:nth-of-type(1) ul{
 	main section:nth-of-type(1) ul {
 		grid-template-columns:repeat(3, 1fr);
 	}
-
+	main form button {
+		width: 10%;
+	}
 }
+
+
+/* Slider  */
+/* Hoe krijg ik die binnenkort live tekst nu bovenaan de slider */
+/* Ook nog werkend maken van de buttons */
+
+main section:nth-of-type(2) {
+	display: flex; 
+	flex-direction: row;
+	overflow: auto;
+	gap: 1rem;
+	margin: 1rem;
+}
+
+main section:nth-of-type(2) article {
+	min-width: 100%;
+	scroll-snap-type: x proximity;
+	scroll-snap-stop: always;
+	overscroll-behavior: contain;
+}
+
+/* Bekijk agenda voor meer */
+/* HIer nog even goed naar kijken want het staat nog niet zoals hoort */
+main section:nth-of-type(3) article {
+	display: flex;
+	flex-direction: row;
+}
+
+main section:nth-of-type(3) article a p:first-of-type {
+	background-color: var(--color-background);
+	color: var(--background-color);
+	border-top:solid 5px var(--main-color);
+	width: 60px;
+	height: 60px;
+}
+
 
 /* blijf op de hoogte box */
 main section:nth-of-type(7) {
 	background-color: var(--main-color);
+	padding: 1rem;
 }
-
-
 
 /* Footer */
 footer ul {
