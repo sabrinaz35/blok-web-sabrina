@@ -16,14 +16,14 @@
 	--main-color: #083ade;
 	--main-text-color: white;
 	--background-color:#010b2c;
-	--font: 'futura', Helvetica, Arial, sans-serif
+	--font: "Futura", Helvetica, Arial, sans-serif
 }
 
 /* https://font.download/font/futura-pt  */
 
 @font-face {
-	font-family: 'futura';
-	src: url(https://font.download/font/futura-pt) format(ttc);
+	font-family:"Futura";
+	src: url("fonts/fonts/FuturaCyrillicBook.ttf");
 }
 
 /****************/
@@ -296,34 +296,44 @@ main form button:hover, select:hover {
 /* Hoe krijg ik die binnenkort live tekst nu bovenaan de slider */
 /* Ook nog werkend maken van de buttons */
 
-main section:nth-of-type(2) {
+main section:nth-of-type(2) div{
 	display: flex; 
 	flex-direction: row;
 	overflow: auto;
-	gap: 1rem;
 	margin: 1rem;
+	scroll-snap-type: x mandatory;
+	scroll-snap-stop: always;
 }
 
 main section:nth-of-type(2) article {
 	min-width: 100%;
-	scroll-snap-type: x proximity;
-	scroll-snap-stop: always;
 	overscroll-behavior: contain;
+	scroll-snap-align: center;
 }
 
 /* Bekijk agenda voor meer */
 /* HIer nog even goed naar kijken want het staat nog niet zoals hoort */
-main section:nth-of-type(3) article {
-	display: flex;
-	flex-direction: row;
+main section:nth-of-type(3) {
+	align-items: start;
+	gap: 1rem;
 }
 
-main section:nth-of-type(3) article a p:first-of-type {
+main section:nth-of-type(3) article a{
+	display: flex;
+	flex-direction: row;
+	padding: 1rem;
+	gap:1em;
+	justify-content: center;
+}
+
+main section:nth-of-type(3) article a>p{
 	background-color: var(--color-background);
 	color: var(--background-color);
 	border-top:solid 5px var(--main-color);
-	width: 60px;
-	height: 60px;
+	padding: 1em .5em;
+	margin: auto 0;
+	min-width: 70px;
+	min-height: 70px;
 }
 
 
@@ -334,32 +344,58 @@ main section:nth-of-type(7) {
 }
 
 /* Footer */
-footer ul {
-	display: flex;
-	padding: 4rem;
-}
+
+
 
 footer ul:nth-of-type(1){
+	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
 }
 
-footer ul:nth-of-type(1) li, footer ul:nth-of-type(1) li {
-	width: 25%;
+footer ul:nth-of-type(1) li {
+	max-width: 8rem;
 }
-
-
-footer ul:nth-of-type(3){
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
 
 footer ul:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 1em;
+	gap: 1em;
+}
+
+footer ul:nth-of-type(2) div{
+	display: flex;
 	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+footer ul:nth-of-type(2) li {
+	min-width: 1rem;
+	max-width: 1.8rem;
 }
 
 footer ul:nth-of-type(2) li a svg {
 	width: 100%;
 }
+
+footer ul:nth-of-type(3) {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1em;
+}
+
+footer>a:nth-of-type(3) {
+	background-color: var(--main-color);
+	clip-path: polygon(100% 0, 0 100%, 100% 100%);
+	height: 136px;
+    max-width: 490px;
+    width: 100vw;
+	bottom: 0;
+	right: 0;
+}
+
