@@ -176,18 +176,24 @@ een afbeelding is of een tekst. En de datum bij elke event nu een footer is of g
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+In het begin had ik wat moeite met de flex methode, maar dat lukt nu wel aardig goed. Soms twijfel ik of code goed genoteerd staat zoals:
+   <img src="readme-images/screenshot-footer-voortgang2.png" height="375px" alt="Screenshot code een position pagina.">
+Ik heb namelijk gebruik gemaakt van een -X getal en ik weet niet of dit wel de juiste manier is om dat dan zo te noteren.
+Verder loop ik tegen dingen aan die dan nog net te hoog gegrepen zijn, zoals bijvoorbeeld een slider met buttons. In plaats daarvan heb ik nu een afbeelding waarbij je kan scrollen naar rechts en weer terug.
+Ik merk ook wel dat ik steeds beter begin te worden in het gebruiken van de selectoren, alhoewel ik wel vaak de :nth-of-type gebruik.
 
+Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, maar die werkt alleen op een klein gedeelte terwijl ik die over de hele breedte eigenlijk wil hebben net als de zoek. Zie hieronder het voorbeeld bij de, kies genre, button.
+ <img src="readme-images/hover-probleem-voortgang2.png" height="375px" alt="Screenshot code een van de hover homepagina.">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  |Sabrina                 | Jeppe              | Rafi         | student 4        |
+  | ---                    | ---                | ---          | ---              |
+  | hover                  | en dit             | en ik dit    | en dan ik dat    |
+  | position veel in de min| dit als er tijd is | nog een punt | dit wil ik zeker |
+  | vraagje over font      | ...                | ...          | ...              |
+  | juiste opbouw css      | ...                | ...          | ...              |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
