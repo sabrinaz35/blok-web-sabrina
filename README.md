@@ -188,20 +188,26 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  |Sabrina                 | Jeppe              | Rafi         | student 4        |
-  | ---                    | ---                | ---          | ---              |
-  | hover                  | en dit             | en ik dit    | en dan ik dat    |
-  | position veel in de min| dit als er tijd is | nog een punt | dit wil ik zeker |
-  | vraagje over font      | ...                | ...          | ...              |
-  | juiste opbouw css      | ...                | ...          | ...              |
+  |Sabrina                 | Jeppe              | Rafi                     | 
+  | ---                    | ---                | ---                      | 
+  | hover                  | ...                | loop atribute bij video  | 
+  | position veel in de min| ...                | ...                      | 
+  | vraagje over font      | ...                | ...                      | 
+  | juiste opbouw css      | ...                | ...                      | 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Bij de checkboxes kan je beter gebruik maken van de details met daarin label en dan daarin de summary, daar geef je dan aan wat zogezegd de titel is van het kopje die tevoorschijn komt in je viewport. In de label zet je dan de input met type checkbox. 
+  - De fieldset is de section van een form
+  - In een label gaat de for gepaard met de id waardoor je ook op de label kan klikken en dan kan je meteen al iets intypen in de input field.
+-   Als je de header position fixed zet, dan komt de afbeelding achter de header te staan en blijft de header gewoon op zijn plek staan.
+- Bij de footer en dan de span kan ik de bottom element in de css weg laten
+- De h1 die ik heb staan moet de logo worden van de pagina, omdat de h1 niet Robbie Williams is.
+- Maandag de opbouw van de css bespreken in de les.
+- Je moet gewoon kijken wat je wilt leren en daar meer je aandacht op focussen, de docent gaat niet kijken of je alles een op een hebt weten na te maken van de website die jij hebt gekozen.
+- Gebruik van een video kan je de breedte aanpassen door VW te gebruiken bij de width.
+- Een fieldset heeft een legend nodig dat is de h van de fieldset, deze kan je ook hidden doen
 
 </details>
 
@@ -296,5 +302,6 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
   4. https://www.cdnfonts.com/futura-std-4.font 
   5. https://css-tricks.com/html-inputs-and-labels-a-love-story/
   6. https://www.w3schools.com/howto/howto_js_slideshow.asp 
+  7. https://www.svgrepo.com/svg/35457/calendar-symbol 
 
 </details>
