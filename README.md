@@ -222,7 +222,12 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify content het niet meer deed, terwijl ik wel op de container een display flex had gezet. 
+   <img src="readme-images/probleem-met-justify-content.png" height="375px" alt="Screenshot code een van het probleem justify content">
+   Dit element wilde ik aan het begin plaatsen, maar op de een of andere manier wilde hij dat niet doen. 
 
+   Daarnaast dat ik bezig was met het maken van de tweede pagina, kan je dan gewoon gebruik maken van de code die je hebt geschreven voor de eerste pagina en dan daarna de andere dingen los noteren, die je dan extra anders wilt hebben? Of moet je dan alles opnieuw herhalen? want anders wordt het niet echt overzichtelijk. 
+    <img src="readme-images/vraag-over-vormgeving.png" alt="Screenshot code met dezelfde achtergrond kleur en padding">
 </details>
 
 
