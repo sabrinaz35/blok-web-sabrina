@@ -70,6 +70,7 @@ ul {
 h2 {
 	font-size: 32px;
 	text-transform: uppercase;
+	padding: 1rem;
 }
 
 h3 {
@@ -213,6 +214,9 @@ header nav nav ul:nth-of-type(2) li a svg {
 	width: 100%;
 }
 
+@media (width > 60em) {
+	/* code voor de header die dan breed anders moet*/
+} 
 
 
 
@@ -224,6 +228,7 @@ header nav nav ul:nth-of-type(2) li a svg {
 footer ul {
 	display: flex;
 }
+
 footer ul:nth-of-type(1){
 	flex-wrap: wrap;
 	align-items: center;
@@ -378,14 +383,12 @@ main form {
 	}
 }
 
-main form fieldset label {
-	display: flex;
-}
-
 @media (width > 60em) {
 	main form fieldset {
 		display: flex;
-
+		justify-content: space-around;
+		width: 60%;
+		align-items:center; 
 	}
 }
 
@@ -397,9 +400,15 @@ main form fieldset label:nth-of-type(1) input{
 	color: var(--main-text-color);
 }
 
+summary {
+	list-style: none;
+}
 
-main form fieldset details label{
-	flex-direction: column; /* Het staat nog niet zo goed */
+/* Het staat nog niet zo goed */
+summary::after {
+	content: ' >';
+	width: 9rem;
+	transition: 2s;
 }
 
 main form fieldset,  main form button  {
@@ -419,6 +428,7 @@ main form button {
 	main form button {
 		width: 10%;
 	}
+
 }
 
 main form fieldset details {
@@ -481,8 +491,9 @@ main section:nth-of-type(2) article {
 /* Section 3	*/
 /****************/
 main section:nth-of-type(3) {
-	align-items: start;
 	gap: 1rem;
+	align-items: flex-start;
+	
 }
 
 main section:nth-of-type(3) article a{
@@ -539,11 +550,15 @@ main section:last-of-type {
 [class = "detailpagina"] main div {
 	display: flex;
 	justify-content: space-around;
-	padding: 5rem;
 	align-items: center;
 	flex-direction: row;
 	flex-wrap: wrap;
 	width: 100vw;
+}
+
+[class = "detailpagina"] main>div {
+	max-width: 70vw;
+	padding: 3rem;
 }
 
 
@@ -577,11 +592,17 @@ main section:last-of-type {
 }
 
 
-[class = "detailpagina"] main section:nth-of-type(1)>p{
+[class = "detailpagina"] main section:nth-of-type(1)>p, [class = "detailpagina"] main section:nth-of-type(2) > p:not(:first-of-type){
 	text-align: center;
 	padding: 1.5rem;
 	margin-bottom: 1rem;
 	font-size: 1.2em;
+}
+
+@media (width > 60em){
+	[class = "detailpagina"] main section:nth-of-type(1)>p, [class = "detailpagina"] main section:nth-of-type(2) > p:not(:first-of-type) {
+		width: 55%;
+	}
 }
 
 [class = "detailpagina"] main section:nth-of-type(1) div p:last-of-type {
@@ -656,7 +677,7 @@ iframe {
 	border: none;
 }
 
-
+ /* Moet er voor die section waar er kaarten gekocht moeten worden ook een grid gemaakt worden. */
 
 
 
@@ -684,25 +705,5 @@ iframe {
 
 	[class = "detailpagina"] section:nth-of-type(5) article {
 		width: 20em;
-	}
-}
-
-
-
-/****************/
-/* Section 6 pagina 2	*/
-/****************/
-
-[class = "detailpagina"] section:last-of-type article {
-	background-color: transparent;
-	border: solid .5px var(--color-text-light);
-	justify-items: flex-start;
-}
-
-@media (width > 60em){
-	[class = "detailpagina"] section:last-of-type article {
-		display: flex;
-		flex-direction: column;
-		justify-items: flex-start;
 	}
 }
