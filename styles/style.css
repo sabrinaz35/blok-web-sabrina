@@ -19,6 +19,7 @@
 	--font: "Futura1", Futura, Helvetica, Arial, sans-serif;
 	--color-text-light: hsla(0, 0%, 100%, .7); 
 	/* Hue saturation lightness en aa */
+
 }
 
 /* https://font.download/font/futura-pt  */
@@ -38,8 +39,6 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
-
 /* Algemene styling */
 body, button {
 	background-color: var(--background-color);
@@ -54,9 +53,10 @@ main {
 	flex-direction: column;
 }
 
-svg {
-	color: var(--color-background);
-	width: 100%;
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 li {
@@ -65,11 +65,6 @@ li {
 
 ul {
 	padding: 0;
-}
-
-a {
-	text-decoration: none;
-	color: var(--main-text-color);
 }
 
 h2 {
@@ -81,11 +76,28 @@ h3 {
 	text-transform: uppercase;
 }
 
+a {
+	text-decoration: none;
+	color: var(--main-text-color);
+}
+
+svg {
+	color: var(--color-background);
+	width: 100%;
+}
+
 img {
 	width: 100%;
 }
 
-/* Nav */
+
+
+
+
+/****************/
+/* Header		*/
+/****************/
+
 header {
 	display:flex;
 	justify-content: center;
@@ -201,232 +213,14 @@ header nav nav ul:nth-of-type(2) li a svg {
 	width: 100%;
 }
 
-/* Body evenementen lijst */
-/* Robbie Williams foto pagina 1 & 2 */ 
- section {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-main > a:first-of-type, [class = "detailpagina"] main section:nth-of-type(1) div{
-	position: relative;
-	display: flex;
-	height: fit-content;
-	justify-content: center;
-}
-
-main > a:first-of-type h1, [class = "detailpagina"] main section:nth-of-type(1) div h1  {
-	position: absolute;
-	bottom: 4rem;
-	font-size: 25px;
-	text-transform: uppercase;
-}
-
-main > a:first-of-type p, [class = "detailpagina"] main section:nth-of-type(1) div p{
-	position: absolute;
-	bottom: 2.5rem;
-	font-weight: 100;
-}
-
-/* alleen de position aanpassen, ik weet niet of dit de juiste manier is, of is er een makkelijkere manier voor*/
-
-[class = "detailpagina"] main section:nth-of-type(1) ul {
-	padding: 1rem;
-	display: flex;
-	justify-content: end;
-	align-items: center;
-}
-
-[class = "detailpagina"] main section:nth-of-type(1) ul li:not(:last-of-type) {
-	max-width: 5%;
-}
-
-[class = "detailpagina"] main section:nth-of-type(1) li>button {
-	background-color: var(--main-color);
-	padding: 1rem;
-	border: none;
-}
-
-[class = "detailpagina"] main section:nth-of-type(1) div p:last-of-type {
-	bottom: 1rem;
-}
 
 
-/* De form */
-/* De driehoekjes moeten bij de eerste twee weg */
-legend {
-	display: none;
-}
-
-main form fieldset label {
-	display: flex;
-}
-
-main form fieldset label:nth-of-type(1) input{
-	width: 70%;
-	background-color: var(--main-color);
-	padding: 1rem;
-	border: none;
-	color: var(--main-text-color);
-}
 
 
-main form fieldset details label{
-	flex-direction: column; /* Het staat nog niet zo goed */
-}
 
-main form {
-	background-color: var(--main-color);
-	margin: 1em;
-	transform: translateY(-2em);
-}
-
-main form fieldset,  main form button  {
-	border: none;
-	padding: 0;
-	transition: .2s;
-}
-
-main form button {
-	background-color: var(--main-color);
-	width: 100%;
-	font-size: 20px;
-	padding: 1rem;
-}
-
-main form fieldset details {
-	padding: 1em;
-}
-
-main form fieldset button:nth-of-type(1) {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 1rem;
-}
-
-main form fieldset button:hover {
-	background-color: var(--color-background);
-	color:#083ade;
-}
-
-main form fieldset button svg {
-	width: 20px;
-	min-width: 10px;
-	fill: var(--color-background);
-}
-
-main form fieldset button p {
-	font-size: .9rem;
-}
-
-main form fieldset  button:hover svg {
-	fill: #083ade;
-}
-
-/* Hover instellingen */
-main form button:hover, details:hover, [class = "detailpagina"] main section:nth-of-type(1) li>button:hover{
-	background-color: var(--color-background);
-	color: var(--main-color);
-}
-
-/* net aangekondigd */
-main section:nth-of-type(1) h2{
-	margin-bottom: 4rem;
-}
-
-main section:nth-of-type(1) ul{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-column-gap: 2rem;
-	grid-row-gap: 4rem;
-}
-
-/* wijder scherm */
-/* button zoeken aanpassen zodat die ook kleiner word */
-
-@media (width > 60em) {
-	/* De responsiveness van de form */
-	main form {
-		display: flex;
-		justify-content: space-around;
-	}
-
-	main form fieldset {
-		display: flex;
-
-	}
-	/* De responsiveness van "net aangekondigd" */
-	main section:nth-of-type(1) ul {
-		grid-template-columns:repeat(3, 1fr);
-	}
-	main form button {
-		width: 10%;
-	}
-}
-
-/* Voor de tweede pagina */
-@media (width < 490px){
-	[class = "detailpagina"] main section:nth-of-type(1) ul li a svg {
-		display: none;
-	}
-}
-
-/* Slider  */
-main section:nth-of-type(2) div{
-	display: flex; 
-	flex-direction: row;
-	overflow: auto;
-	margin: 1rem;
-	scroll-snap-type: x mandatory;
-	scroll-snap-stop: always;
-}
-
-main section:nth-of-type(2) article {
-	min-width: 100%;
-	overscroll-behavior: contain;
-	scroll-snap-align: center;
-}
-
-/* Bekijk agenda voor meer */
-main section:nth-of-type(3) {
-	align-items: start;
-	gap: 1rem;
-}
-
-main section:nth-of-type(3) article a{
-	display: flex;
-	flex-direction: row;
-	padding: 1rem;
-	gap:1em;
-	justify-content: center;
-}
-
-main section:nth-of-type(3) article a>p{
-	background-color: var(--color-background);
-	color: var(--background-color);
-	border-top:solid 5px var(--main-color);
-	padding: 1em .5em;
-	margin: auto 0;
-	min-width: 70px;
-	min-height: 70px;
-}
-
-/* blijf op de hoogte box */
-/* deze wil niet in het midden komen */
-main section:last-of-type article {
-	background-color: var(--main-color);
-	padding: 1rem;
-}
-
-main section:last-of-type {
-	max-width: 50em;
-	text-align: center;
-	padding: 1rem;
-}
-
-/* Footer */
+/****************/
+/* Footer	*/
+/****************/
 footer ul {
 	display: flex;
 }
@@ -496,7 +290,292 @@ footer a:nth-of-type(3) {
 	z-index: 4;
 }
 
-/* De detailpagina aangepaste vormgeving */
+
+
+
+
+/****************/
+/* De body 		*/
+/****************/
+
+/****************/
+/* Section 1	*/
+/****************/
+
+main > a:first-of-type, [class = "detailpagina"] main section:nth-of-type(1) div{
+	position: relative;
+	display: flex;
+	height: fit-content;
+	justify-content: center;
+}
+
+main > a:first-of-type h1, [class = "detailpagina"] main section:nth-of-type(1) div h1  {
+	position: absolute;
+	bottom: 5rem;
+	font-size: 25px;
+	text-transform: uppercase;
+}
+
+main > a:first-of-type p, [class = "detailpagina"] main section:nth-of-type(1) div p{
+	position: absolute;
+	bottom: 3rem;
+	font-weight: 100;
+}
+
+/* net aangekondigd */
+
+main section:nth-of-type(1) h2{
+	margin-bottom: 4rem;
+}
+
+main section:nth-of-type(1) ul{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-column-gap: 2rem;
+	grid-row-gap: 4rem;
+}
+
+@media (width > 60em) {
+	/* De responsiveness van "net aangekondigd" */
+	main section:nth-of-type(1) ul {
+		grid-template-columns:repeat(3, 1fr);
+	}
+}
+
+
+
+
+/****************/
+/* hover	*/
+/****************/
+
+main form button:hover, details:hover, [class = "detailpagina"] main section:nth-of-type(1) li>button:hover{
+	background-color: var(--color-background);
+	color: var(--main-color);
+}
+
+
+/****************/
+/* de form	*/
+/****************/
+
+/* De driehoekjes moeten bij de eerste twee weg */
+legend {
+	display: none;
+}
+
+main form {
+	background-color: var(--main-color);
+	margin: 1em;
+	transform: translateY(-2em);
+}
+
+@media (width > 60em) {
+	/* De responsiveness van de form */
+	main form {
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+main form fieldset label {
+	display: flex;
+}
+
+@media (width > 60em) {
+	main form fieldset {
+		display: flex;
+
+	}
+}
+
+main form fieldset label:nth-of-type(1) input{
+	width: 70%;
+	background-color: var(--main-color);
+	padding: 1rem;
+	border: none;
+	color: var(--main-text-color);
+}
+
+
+main form fieldset details label{
+	flex-direction: column; /* Het staat nog niet zo goed */
+}
+
+main form fieldset,  main form button  {
+	border: none;
+	padding: 0;
+	transition: .2s;
+}
+
+main form button {
+	background-color: var(--main-color);
+	width: 100%;
+	font-size: 20px;
+	padding: 1rem;
+}
+
+@media (width > 60em) {
+	main form button {
+		width: 10%;
+	}
+}
+
+main form fieldset details {
+	padding: 1em;
+}
+
+main form fieldset button:nth-of-type(1) {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+main form fieldset button:hover {
+	background-color: var(--color-background);
+	color:#083ade;
+}
+
+main form fieldset button svg {
+	width: 20px;
+	min-width: 10px;
+	fill: var(--color-background);
+}
+
+main form fieldset button p {
+	font-size: .9rem;
+}
+
+main form fieldset  button:hover svg {
+	fill: #083ade;
+}
+
+
+
+
+
+/****************/
+/* Section 2	*/
+/****************/
+main section:nth-of-type(2) div{
+	display: flex; 
+	flex-direction: row;
+	overflow: auto;
+	margin: 1rem;
+	scroll-snap-type: x mandatory;
+	scroll-snap-stop: always;
+	gap: 1rem;
+}
+
+main section:nth-of-type(2) article {
+	min-width: 100%;
+	overscroll-behavior: contain;
+	scroll-snap-align: center;
+}
+
+
+
+
+/****************/
+/* Section 3	*/
+/****************/
+main section:nth-of-type(3) {
+	align-items: start;
+	gap: 1rem;
+}
+
+main section:nth-of-type(3) article a{
+	display: flex;
+	flex-direction: row;
+	padding: 1rem;
+	gap:1em;
+	justify-content: center;
+}
+
+main section:nth-of-type(3) article a>p{
+	background-color: var(--color-background);
+	color: var(--background-color);
+	border-top:solid 5px var(--main-color);
+	padding: 1em .5em;
+	margin: auto 0;
+	min-width: 70px;
+	min-height: 70px;
+}
+
+
+
+
+/****************/
+/* Section 4	*/
+/****************/
+main section:last-of-type article {
+	background-color: var(--main-color);
+	padding: 1rem;
+}
+
+main section:last-of-type {
+	max-width: 50em;
+	text-align: center;
+	padding: 1rem;
+}
+
+
+
+
+
+/****************/
+/* Pagina 2	*/
+/****************/
+
+/****************/
+/* main pagina 2	*/
+/****************/
+
+[class = "detailpagina"] main div a {
+	max-width: 30%;
+}
+
+[class = "detailpagina"] main div {
+	display: flex;
+	justify-content: space-around;
+	padding: 5rem;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100vw;
+}
+
+
+[class = "detailpagina"] main {
+	align-items: center;
+}
+
+
+
+
+/****************/
+/* Section 1 pagina 2	*/
+/****************/
+/* alleen de position aanpassen, ik weet niet of dit de juiste manier is, of is er een makkelijkere manier voor*/
+
+[class = "detailpagina"] main section:nth-of-type(1) ul {
+	padding: 1rem;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+
+[class = "detailpagina"] main section:nth-of-type(1) ul li:not(:last-of-type) {
+	max-width: 5%;
+}
+
+[class = "detailpagina"] main section:nth-of-type(1) li>button {
+	background-color: var(--main-color);
+	padding: 1rem;
+	border: none;
+}
+
 
 [class = "detailpagina"] main section:nth-of-type(1)>p{
 	text-align: center;
@@ -505,15 +584,47 @@ footer a:nth-of-type(3) {
 	font-size: 1.2em;
 }
 
-[class = "detailpagina"] main section:not(:first-of-type) {
-	max-width: 750px;
-	padding: 1rem;
-	align-items: center;
+[class = "detailpagina"] main section:nth-of-type(1) div p:last-of-type {
+	bottom: 1rem;
 }
 
+@media (width < 490px){
+	[class = "detailpagina"] main section:nth-of-type(1) ul li a svg {
+		display: none;
+	}
+}
+
+@media (width > 60em){
+	[class = "detailpagina"] main section:first-of-type div img{
+		height: 45rem;
+		object-fit: cover;
+		object-position: top;
+	}
+}
+
+
+
+
+/****************/
+/* Section 2 video's pagina 2	*/
+/****************/
 iframe {
 	padding-top: 1.5rem;
+	max-width: 80%;
 }
+
+@media (width > 60em) {
+	iframe {
+		max-width: 55%;
+	}
+}
+
+
+
+
+/****************/
+/* Section 4 pagina 2*/
+/****************/
 
 /* deze wil ook niet center */
 [class = "detailpagina"] main section:nth-of-type(4) {
@@ -545,19 +656,53 @@ iframe {
 	border: none;
 }
 
-[class = "detailpagina"] main div a {
-	max-width: 30%;
+
+
+
+
+/****************/
+/* Section 5 pagina 2	*/
+/****************/
+
+[class = "detailpagina"] section:nth-of-type(5) {
+	gap: 2rem;
 }
 
-[class = "detailpagina"] main div {
-	display: flex;
-	justify-content: space-around;
-	padding: 1.5rem;
-	align-items: center;
+@media (width > 60em) {
+	/* https://cssgrid-generator.netlify.app/ */
+	[class = "detailpagina"] section:nth-of-type(5) {
+		display: grid;
+		width: 50em;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+	}
+
+	[class = "detailpagina"] section:nth-of-type(5) h2 {
+		grid-area: 1 / 1 / 2 / 3;
+		text-align: center;
+	}
+
+	[class = "detailpagina"] section:nth-of-type(5) article {
+		width: 20em;
+	}
 }
 
 
 
+/****************/
+/* Section 6 pagina 2	*/
+/****************/
 
+[class = "detailpagina"] section:last-of-type article {
+	background-color: transparent;
+	border: solid .5px var(--color-text-light);
+	justify-items: flex-start;
+}
 
-
+@media (width > 60em){
+	[class = "detailpagina"] section:last-of-type article {
+		display: flex;
+		flex-direction: column;
+		justify-items: flex-start;
+	}
+}
