@@ -595,6 +595,11 @@ main section:nth-of-type(2) article {
 	scroll-snap-align: center;
 }
 
+@media (width>60em) {
+	main section:nth-of-type(2) article {
+		min-width: 70%;
+	}
+}
 
 
 
@@ -789,7 +794,28 @@ iframe {
 	border: none;
 }
 
- /* Moet er voor die section waar er kaarten gekocht moeten worden ook een grid gemaakt worden. */
+/* vraag waarom dit nu ineens uit beeld komt + hij loopt nog niet helemaal goed responsive maar begin is er*/
+
+[class = "detailpagina"] main section:nth-of-type(4) article:last-of-type article:last-of-type div{
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+@media (width>60em){
+	[class = "detailpagina"] main section:nth-of-type(4) article:last-of-type {
+		display: flex;
+		flex-direction: column;
+		width: 90vw;
+		padding: .4rem;
+	}
+
+	[class = "detailpagina"] main section:nth-of-type(4) article:last-of-type article:last-of-type{
+		flex-direction: row;
+		gap: 1.5rem;
+		padding-top: 50px;
+	}
+	
+}
 
 
 
