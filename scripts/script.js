@@ -31,3 +31,14 @@ window.addEventListener('scroll', ()=>{
     }
 }) 
 
+
+
+// Voor de form popup
+const klantenserviceButton = document.querySelector("header nav ul li:nth-of-type(3)");
+const klantenServiceDialog = document.querySelector("main dialog");
+
+klantenserviceButton.addEventListener("click",  ()=> {
+ klantenServiceDialog.showModal()
+});
+
+

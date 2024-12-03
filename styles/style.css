@@ -58,6 +58,7 @@ main {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+	align-items: center;
 }
 
 section {
@@ -97,8 +98,6 @@ svg {
 img {
 	width: 100%;
 }
-
-
 
 
 
@@ -216,17 +215,91 @@ header nav nav ul:nth-of-type(2) li a, [class = "detailpagina"] main section:nth
 	align-items: center;
 }
 
+header nav > ul {
+	display: none;
+}
+
 /* De svg's van menu, maar ook die onder de foto bij robbie williams */
 header nav nav ul:nth-of-type(2) li a svg {
 	width: 100%;
 }
 
+/* met hulp van ali, de display none etc voor de vormgeving breedte van  */
 @media (width > 60em) {
 	/* code voor de header die dan breed anders moet*/
+	header nav > ul {
+		display: flex;
+		align-items: center;
+		width: 100vw;
+		justify-content: space-around;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	header nav button {
+		display: none;
+	}
+
+	header nav>a {
+		display: none;
+	}
 } 
 
+/****************/
+/* KLantenservice	*/
+/****************/
+header dialog::backdrop {
+	background-color: var(--main-color);
+	backdrop-filter: blur(2px);
+}
 
+dialog button:nth-of-type(1) {
+	position: absolute; 
+	right: 0; 
+	top: 0;
+  	aspect-ratio: 3/3;
+}
 
+main dialog {
+	position: fixed;
+	z-index: 5;
+}
+
+dialog {
+	width: 100vw;
+	padding:4rem;
+	
+	background:var(--main-color);
+	border:none;
+	color:white;
+	
+	overflow:visible;
+}
+
+dialog form {
+	display:grid;
+	gap:1em .5em;
+}
+
+dialog h2 {
+	margin:0;
+	font-weight:400;
+	line-height:1.25;
+}
+
+dialog label {
+	width:100%;
+	display:grid;
+	gap:.25em;
+}
+
+dialog :is(input, textarea) {
+	width:100%;
+	padding:.25em .5em;
+	appearance:none;
+	border:none;
+	font-size:1em;
+}
 
 
 /****************/
@@ -321,7 +394,7 @@ main > a:first-of-type, [class = "detailpagina"] main section:nth-of-type(1) div
 	justify-content: center;
 }
 
-main > a:first-of-type h1, [class = "detailpagina"] main section:nth-of-type(1) div h1  {
+main > a:first-of-type h2, [class = "detailpagina"] main section:nth-of-type(1) div h1 {
 	position: absolute;
 	bottom: 5rem;
 	font-size: 25px;
@@ -340,7 +413,12 @@ main > a:first-of-type p, [class = "detailpagina"] main section:nth-of-type(1) d
 		height: 60rem;
 		object-fit: cover;
 		object-position: top;
+		width: 100vw;
 	}
+	main > a:first-of-type h2, [class = "detailpagina"] main section:nth-of-type(1) div h1 {
+		font-size: 3rem;
+	}
+	
 }
 
 /* net aangekondigd */
@@ -396,6 +474,7 @@ main form {
 	main form {
 		display: flex;
 		justify-content: space-around;
+		width: 90vw;
 	}
 }
 
@@ -406,14 +485,6 @@ main form {
 		width: 60%;
 		align-items:center; 
 	}
-}
-
-main form fieldset label:nth-of-type(1) input{
-	width: 70%;
-	background-color: var(--main-color);
-	padding: 1rem;
-	border: none;
-	color: var(--main-text-color);
 }
 
 /* code voor de pseudoclass hoe ik die placeholder heb moeten aanpassen heb ik van de link hieronder */
@@ -439,6 +510,7 @@ main form fieldset,  main form button  {
 	border: none;
 	padding: 0;
 	transition: .2s;
+	width: 80vw;
 }
 
 main form button {
@@ -485,7 +557,27 @@ main form fieldset  button:hover svg {
 	fill: #083ade;
 }
 
-
+@media (width > 60em) {
+	main form fieldset details {
+		position: relative;
+	}
+	
+	main form fieldset details div {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+		height: 20vh;
+		left: 0;
+		width: 100%;
+		color: blue;
+		background-color: white;
+	}
+	
+	main form fieldset details div input {
+		width: fit-content;
+	}
+}
 
 
 
