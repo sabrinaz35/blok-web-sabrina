@@ -308,5 +308,7 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
   5. https://css-tricks.com/html-inputs-and-labels-a-love-story/
   6. https://www.w3schools.com/howto/howto_js_slideshow.asp 
   7. https://www.svgrepo.com/svg/35457/calendar-symbol 
+  8. https://codehalweb.com/how-to-change-placeholder-color-in-html-and-css/#:~:text=Customizing%20placeholder%20text%20color%20in,%3A%3Aplaceholder%E2%80%9D%20pseudo%2Delement.&text=In%20this%20code%2C%20the%20%E2%80%9C%3A%3A,shade%20of%20gray%20(%23777). 
+  9. https://developer.mozilla.org/en-US/docs/Web/CSS/object-position 
 
 </details>

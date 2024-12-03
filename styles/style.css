@@ -44,6 +44,13 @@ body, button {
 	background-color: var(--background-color);
 	color: var(--main-text-color);
 	font-family: var(--font);
+	font-size: 1.1rem;
+}
+
+@media (width > 60em) {
+	main, button {
+		font-size: 1.2rem;
+	}
 }
 
 main {
@@ -327,6 +334,15 @@ main > a:first-of-type p, [class = "detailpagina"] main section:nth-of-type(1) d
 	font-weight: 100;
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/object-position */
+@media (width > 60em){
+	main > a:first-of-type img{
+		height: 60rem;
+		object-fit: cover;
+		object-position: top;
+	}
+}
+
 /* net aangekondigd */
 
 main section:nth-of-type(1) h2{
@@ -400,13 +416,21 @@ main form fieldset label:nth-of-type(1) input{
 	color: var(--main-text-color);
 }
 
+/* code voor de pseudoclass hoe ik die placeholder heb moeten aanpassen heb ik van de link hieronder */
+/* https://codehalweb.com/how-to-change-placeholder-color-in-html-and-css/#:~:text=Customizing%20placeholder%20text%20color%20in,%3A%3Aplaceholder%E2%80%9D%20pseudo%2Delement.&text=In%20this%20code%2C%20the%20%E2%80%9C%3A%3A,shade%20of%20gray%20(%23777).  */
+::placeholder {
+	color: var(--main-text-color);
+	font-family: var(--font);
+	font-size: 1rem;
+}
+
 summary {
 	list-style: none;
 }
 
 /* Het staat nog niet zo goed */
 summary::after {
-	content: ' >';
+	content: '>';
 	width: 9rem;
 	transition: 2s;
 }
@@ -454,7 +478,7 @@ main form fieldset button svg {
 }
 
 main form fieldset button p {
-	font-size: .9rem;
+	font-size: 1rem;
 }
 
 main form fieldset  button:hover svg {
@@ -615,9 +639,10 @@ main section:last-of-type {
 	}
 }
 
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/object-position */
 @media (width > 60em){
 	[class = "detailpagina"] main section:first-of-type div img{
-		height: 45rem;
+		height: 60rem;
 		object-fit: cover;
 		object-position: top;
 	}
