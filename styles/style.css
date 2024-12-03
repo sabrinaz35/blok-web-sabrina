@@ -248,24 +248,22 @@ header nav nav ul:nth-of-type(2) li a svg {
 /****************/
 /* KLantenservice	*/
 /****************/
+
+
 header dialog::backdrop {
 	background-color: var(--main-color);
 	backdrop-filter: blur(2px);
 }
 
 dialog button:nth-of-type(1) {
-	position: absolute; 
-	right: 0; 
+	position: absolute;  
 	top: 0;
+	right: 0;
   	aspect-ratio: 3/3;
 }
 
-main dialog {
-	position: fixed;
-	z-index: 5;
-}
-
 dialog {
+	position: fixed;
 	width: 100vw;
 	padding:4rem;
 	
@@ -276,9 +274,12 @@ dialog {
 	overflow:visible;
 }
 
-dialog form {
-	display:grid;
+dialog form:first-of-type {
+	display:flex;
+	flex-direction: column;
 	gap:1em .5em;
+	width: fit-content;
+
 }
 
 dialog h2 {
@@ -287,14 +288,8 @@ dialog h2 {
 	line-height:1.25;
 }
 
-dialog label {
-	width:100%;
-	display:grid;
-	gap:.25em;
-}
-
 dialog :is(input, textarea) {
-	width:100%;
+	width: fit-content;
 	padding:.25em .5em;
 	appearance:none;
 	border:none;
