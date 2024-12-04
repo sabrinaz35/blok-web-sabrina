@@ -301,6 +301,7 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
+Ik heb gedurende het blok ook hulp gehad bij sommige code van Hadil en Ali.
   1. https://www.mojo.nl/ Deze website ga ik namelijk namaken.
   2. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input 
   3. https://www.codecenter.nl/pr/tutorial/html/aflinks
@@ -310,5 +311,9 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
   7. https://www.svgrepo.com/svg/35457/calendar-symbol 
   8. https://codehalweb.com/how-to-change-placeholder-color-in-html-and-css/#:~:text=Customizing%20placeholder%20text%20color%20in,%3A%3Aplaceholder%E2%80%9D%20pseudo%2Delement.&text=In%20this%20code%2C%20the%20%E2%80%9C%3A%3A,shade%20of%20gray%20(%23777). 
   9. https://developer.mozilla.org/en-US/docs/Web/CSS/object-position 
+  10. https://codepen.io/Sabrina-z/pen/pvzzrev 
+  11. https://cssgrid-generator.netlify.app/ 
+  12. https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path 
+  13. https://www.codecenter.nl/pr/tutorial/html/aflinks 
 
 </details>

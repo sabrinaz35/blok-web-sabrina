@@ -152,6 +152,11 @@ header nav nav ul{
 	display: flex;
 }
 
+header nav nav ul li {
+	font-size: 30px;
+	line-height: 3;
+}
+
 header nav nav ul:nth-of-type(1) div {
 	display: flex;
 	justify-content: center;
@@ -246,26 +251,33 @@ header nav nav ul:nth-of-type(2) li a svg {
 } 
 
 /****************/
-/* KLantenservice	*/
+/* Kantenservice	*/
 /****************/
 
+/* Deze code heb ik met behulp van de opdrachten js3 geschreven */
+/* https://codepen.io/Sabrina-z/pen/pvzzrev */
 
-header dialog::backdrop {
+/* header dialog::backdrop {
 	background-color: var(--main-color);
 	backdrop-filter: blur(2px);
-}
+} */
 
 dialog button:nth-of-type(1) {
 	position: absolute;  
 	top: 0;
 	right: 0;
-  	aspect-ratio: 3/3;
+	width: 5rem;
+	border: 2px solid var(--main-text-color);
 }
 
 dialog {
 	position: fixed;
 	width: 100vw;
 	padding:4rem;
+	top: 1rem;
+	left: 1rem;
+	right: 1rem;
+	bottom: 1rem;
 	
 	background:var(--main-color);
 	border:none;
@@ -278,7 +290,7 @@ dialog form:first-of-type {
 	display:flex;
 	flex-direction: column;
 	gap:1em .5em;
-	width: fit-content;
+	
 
 }
 
@@ -288,14 +300,24 @@ dialog h2 {
 	line-height:1.25;
 }
 
-dialog :is(input, textarea) {
-	width: fit-content;
-	padding:.25em .5em;
-	appearance:none;
-	border:none;
-	font-size:1em;
+dialog label {
+	display: flex;
+	flex-direction: column;
+	max-width: 20rem;
 }
 
+dialog label:nth-of-type(4) input {
+	min-height: 10rem;
+	max-height: 20rem;
+}
+
+dialog button:nth-of-type(2) {
+	border: 2px solid var(--main-text-color);
+}
+
+@media (width>60em) {
+
+}
 
 /****************/
 /* Footer	*/
@@ -352,6 +374,7 @@ footer {
 }
 
 /* Is de position zo juist gebruikt? */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path gebruikt voor die polygon uitleg, de code zelf heb ik van https://www.mojo.nl/concerten/robbie-williams de site die ik namaak */
 footer span {
 	background-color: var(--main-color);
 	clip-path: polygon(100% 0, 0 100%, 100% 100%);
@@ -377,11 +400,9 @@ footer a:nth-of-type(3) {
 /****************/
 /* De body 		*/
 /****************/
-
 /****************/
 /* Section 1	*/
 /****************/
-
 main > a:first-of-type, [class = "detailpagina"] main section:nth-of-type(1) div{
 	position: relative;
 	display: flex;
@@ -407,7 +428,7 @@ main > a:first-of-type p, [class = "detailpagina"] main section:nth-of-type(1) d
 	main > a:first-of-type img{
 		height: 60rem;
 		object-fit: cover;
-		object-position: top;
+		object-position: 50% 20%;
 		width: 100vw;
 	}
 	main > a:first-of-type h2, [class = "detailpagina"] main section:nth-of-type(1) div h1 {
@@ -417,7 +438,6 @@ main > a:first-of-type p, [class = "detailpagina"] main section:nth-of-type(1) d
 }
 
 /* net aangekondigd */
-
 main section:nth-of-type(1) h2{
 	margin-bottom: 4rem;
 }
@@ -452,13 +472,12 @@ main form button:hover, details:hover, [class = "detailpagina"] main section:nth
 /****************/
 /* de form	*/
 /****************/
-
 /* De driehoekjes moeten bij de eerste twee weg */
 legend {
 	display: none;
 }
 
-main form {
+main form:nth-of-type(1) {
 	background-color: var(--main-color);
 	margin: 1em;
 	transform: translateY(-2em);
@@ -483,7 +502,7 @@ main form {
 }
 
 /* code voor de pseudoclass hoe ik die placeholder heb moeten aanpassen heb ik van de link hieronder */
-/* https://codehalweb.com/how-to-change-placeholder-color-in-html-and-css/#:~:text=Customizing%20placeholder%20text%20color%20in,%3A%3Aplaceholder%E2%80%9D%20pseudo%2Delement.&text=In%20this%20code%2C%20the%20%E2%80%9C%3A%3A,shade%20of%20gray%20(%23777).  */
+/* https://codehalweb.com/how-to-change-placeholder-color-in-html-and-css/#:~:text=Customizing%20placeholder%20text%20color%20in,%3A%3Aplaceholder%E2%80%9D%20pseudo%2Delement.&text=In%20this%20code%2C%20the%20%E2%80%9C%3A%3A,shade%20of%20gray%20(%23777).*/
 ::placeholder {
 	color: var(--main-text-color);
 	font-family: var(--font);
@@ -501,15 +520,23 @@ summary::after {
 	transition: 2s;
 }
 
-main form fieldset,  main form button  {
+main form fieldset,  main form button {
 	border: none;
 	padding: 0;
 	transition: .2s;
 	width: 80vw;
+	background-color: var(--main-color);
+}
+
+main form:nth-of-type(1) fieldset>label:first-of-type input:first-of-type {
+	height: 3rem;
+	padding: 1rem;
+	width: 80vw;
+	background-color: var(--main-color);
+	border: none;
 }
 
 main form button {
-	background-color: var(--main-color);
 	width: 100%;
 	font-size: 20px;
 	padding: 1rem;
@@ -519,7 +546,9 @@ main form button {
 	main form button {
 		width: 10%;
 	}
-
+	main form:nth-of-type(1) fieldset>label:first-of-type input:first-of-type {
+		width: 20rem;
+	}
 }
 
 main form fieldset details {
@@ -548,29 +577,34 @@ main form fieldset button p {
 	font-size: 1rem;
 }
 
-main form fieldset  button:hover svg {
+main form fieldset button:hover svg {
 	fill: #083ade;
 }
 
+main form fieldset details {
+	position: relative;
+}
+
+main form fieldset details div {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+	height: 10vh;
+	left: 0;
+	width: 100%;
+	color: blue;
+	background-color: white;
+	padding: 1rem;
+}
+
+main form fieldset details div input {
+	width: fit-content;
+}
+
 @media (width > 60em) {
-	main form fieldset details {
-		position: relative;
-	}
-	
 	main form fieldset details div {
-		position: absolute;
-		display: flex;
-		flex-direction: column;
-		overflow-y: auto;
 		height: 20vh;
-		left: 0;
-		width: 100%;
-		color: blue;
-		background-color: white;
-	}
-	
-	main form fieldset details div input {
-		width: fit-content;
 	}
 }
 
@@ -609,7 +643,6 @@ main section:nth-of-type(2) article {
 main section:nth-of-type(3) {
 	gap: 1rem;
 	align-items: flex-start;
-	
 }
 
 main section:nth-of-type(3) article a{
@@ -732,11 +765,12 @@ main section:last-of-type {
 }
 
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/object-position */
+/* Hadil heeft mij geholpen bij de object-fit en de object-position */
 @media (width > 60em){
 	[class = "detailpagina"] main section:first-of-type div img{
 		height: 60rem;
 		object-fit: cover;
-		object-position: top;
+		object-position: 50% 20%;
 	}
 }
 
@@ -759,14 +793,26 @@ iframe {
 
 
 
+/****************/
+/* Section 2 video's pagina 2	*/
+/****************/
+[class = "detailpagina"] main section:nth-of-type(3) {
+	align-items: center;
+}
+
+
+
 
 /****************/
 /* Section 4 pagina 2*/
 /****************/
-
 /* deze wil ook niet center */
 [class = "detailpagina"] main section:nth-of-type(4) {
 	gap: 1rem;
+}
+
+[class = "detailpagina"] main section h2{
+	padding: 3rem;
 }
 
 [class = "detailpagina"] main section:nth-of-type(4) article {
@@ -795,7 +841,6 @@ iframe {
 }
 
 /* vraag waarom dit nu ineens uit beeld komt + hij loopt nog niet helemaal goed responsive maar begin is er*/
-
 [class = "detailpagina"] main section:nth-of-type(4) article:last-of-type article:last-of-type div{
 	flex-direction: column;
 	align-items: flex-start;
@@ -822,25 +867,22 @@ iframe {
 /****************/
 /* Section 5 pagina 2	*/
 /****************/
-
 [class = "detailpagina"] section:nth-of-type(5) {
 	gap: 2rem;
 }
 
 @media (width > 60em) {
-	/* https://cssgrid-generator.netlify.app/ */
+	/* https://cssgrid-generator.netlify.app/ gebruikt om te kijken wat de grid moet worden, gebruikt op advies van Hadil*/
 	[class = "detailpagina"] section:nth-of-type(5) {
 		display: grid;
 		width: 50em;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(3, 1fr);
 	}
-
 	[class = "detailpagina"] section:nth-of-type(5) h2 {
 		grid-area: 1 / 1 / 2 / 3;
 		text-align: center;
 	}
-
 	[class = "detailpagina"] section:nth-of-type(5) article {
 		width: 20em;
 	}

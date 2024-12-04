@@ -14,7 +14,6 @@
 <body>
 	<header>
 		<!-- deze code heb ik van codepen  -->
-
 		<nav> 
 			<a href="/" aria-label="Logo van Mojo"><svg width="155" height="40" viewBox="0 0 155 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Homepage Mojo"><path fill-rule="evenodd" clip-rule="evenodd" d="M49.629 19.565c0-11.13 8.205-19.212 19.506-19.212 11.306 0 19.513 8.088 19.513 19.212 0 11.19-8.029 19.008-19.513 19.008-11.484 0-19.506-7.817-19.506-19.008Zm12.62.197c0 4.381 2.83 7.44 6.886 7.44 4.058 0 6.89-3.073 6.89-7.44 0-4.368-2.9-7.537-6.89-7.537-3.99 0-6.887 3.155-6.887 7.537Zm-38.357 1.542L29.194.96H42.04l5.792 37.027H35.754l-2.398-21.084-5.96 21.084h-7.239l-5.693-21.123-2.382 21.123H0L5.701.96h12.984l5.207 20.344ZM135.489.353c-11.303 0-19.507 8.081-19.507 19.212 0 11.19 8.014 19.008 19.507 19.008 11.492 0 19.511-7.817 19.511-19.008C155 8.441 146.794.353 135.489.353Zm0 26.849c-4.055 0-6.889-3.059-6.889-7.44 0-4.382 2.899-7.537 6.889-7.537s6.888 3.169 6.888 7.537c0 4.367-2.825 7.44-6.888 7.44Zm-39.272.905c2.558 0 2.558-3.335 2.558-4.43V.977h12.608V26.75c0 7.64-5.055 12.976-12.292 12.976-3.398 0-7.733-1.683-10.867-4.202 2.422-2.81 4.11-6.231 4.903-9.93.615 1.328 1.496 2.515 3.09 2.515Z" 
 				fill="currentColor"></path></svg></a>
@@ -78,13 +77,14 @@
 	<!-- vragen of die dialog hier goed staat -->
 		<dialog>
 			<form method="dialog">
-			<h2>Klantenservice</h2>
-			<label language="nl">Voornaam<input type="text"></label>
-			<label language="nl">Achternaam<input type="text"></label>
-			<label>e-mailadress<input type="text"></label>
-					
-			<button aria-label="sluit de form voor aanvraag" class="close">X</button>
-			<button type="submit">indienen</button>
+				<h2>Klantenservice</h2>
+				<label language="nl">Voornaam<input type="text"></label>
+				<label language="nl">Achternaam<input type="text"></label>
+				<label>E-mailadress<input type="text"></label>
+				<label>Stel hier je vraag<input type="text"></label>
+						
+				<button aria-label="sluit de form voor aanvraag" class="close">X</button>
+				<button type="submit">indienen</button>
 			</form>
 		</dialog>
 		<a href="detailpagina.html">
@@ -96,8 +96,7 @@
 			<!-- Vragen of dit de juiste manier is  -->
 			<fieldset>
 				<legend>Zoeken</legend>
-				<label>
-					<input type="text" name="name" placeholder="Zoeken naar evenementen" required minlength="4" size="10" />
+				<label for="Zoeken"><input type="text" name="Zoeken" placeholder="Zoeken naar evenementen" required minlength="4" size="10" />
 				</label>
 				<button>
 					<p>Wanneer wil je gaan</p>
@@ -398,7 +397,6 @@
 		</section>
 	</main>
 	<footer>
-		<a href=""> image van mojo naar mojo aanmeldding</a>
 		<a href="https://ilovemyears.nl/"> <img src="images/banners-ilme.jpg" alt="Banner met een man met oordoppen en het logo van i love my ears"></a>
 		<ul>
 			<!-- https://www.codecenter.nl/pr/tutorial/html/aflinks om even op te frissen hoe dit ook alweer moest -->
