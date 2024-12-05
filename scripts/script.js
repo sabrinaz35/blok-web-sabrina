@@ -10,7 +10,7 @@ let deNav = document.querySelector("header nav nav");
 menuButton.addEventListener("click",openMenu);
 
 function openMenu(){
-    deNav.classList.add("menuZichtbaar");
+    deNav.classList.toggle("menuZichtbaar");
 }
 
 console.log(menuButton)
