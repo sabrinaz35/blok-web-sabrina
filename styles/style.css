@@ -230,7 +230,7 @@ header nav > ul {
 }
 
 header nav li > button {
-	background-color: var(--main-color);
+	background-color: transparent;
 	border: none;
 	font-weight: bold;
 }
