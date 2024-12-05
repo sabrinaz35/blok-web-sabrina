@@ -13,6 +13,9 @@
 </head>
 <body>
 	<header>
+		<!-- Ik heb de errors die ik had in deze html pagina gevraagd aan chatGpt hoe ik dat moest oplossen https://chatgpt.com/c/6751764b-7658-8010-91c0-0972c8e5969e 
+        Met daarbij de prompt "Waarom heeft dit een foutcode" -->
+				<!-- Ook heb ik de site https://validator.w3.org/nu/#textarea Gebruikt om de foutcodes duidelijker te tonen -->
 		<!-- deze code heb ik van codepen  -->
 		<nav> 
 			<a href="/" aria-label="Logo van Mojo"><svg width="155" height="40" viewBox="0 0 155 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Homepage Mojo"><path fill-rule="evenodd" clip-rule="evenodd" d="M49.629 19.565c0-11.13 8.205-19.212 19.506-19.212 11.306 0 19.513 8.088 19.513 19.212 0 11.19-8.029 19.008-19.513 19.008-11.484 0-19.506-7.817-19.506-19.008Zm12.62.197c0 4.381 2.83 7.44 6.886 7.44 4.058 0 6.89-3.073 6.89-7.44 0-4.368-2.9-7.537-6.89-7.537-3.99 0-6.887 3.155-6.887 7.537Zm-38.357 1.542L29.194.96H42.04l5.792 37.027H35.754l-2.398-21.084-5.96 21.084h-7.239l-5.693-21.123-2.382 21.123H0L5.701.96h12.984l5.207 20.344ZM135.489.353c-11.303 0-19.507 8.081-19.507 19.212 0 11.19 8.014 19.008 19.507 19.008 11.492 0 19.511-7.817 19.511-19.008C155 8.441 146.794.353 135.489.353Zm0 26.849c-4.055 0-6.889-3.059-6.889-7.44 0-4.382 2.899-7.537 6.889-7.537s6.888 3.169 6.888 7.537c0 4.367-2.825 7.44-6.888 7.44Zm-39.272.905c2.558 0 2.558-3.335 2.558-4.43V.977h12.608V26.75c0 7.64-5.055 12.976-12.292 12.976-3.398 0-7.733-1.683-10.867-4.202 2.422-2.81 4.11-6.231 4.903-9.93.615 1.328 1.496 2.515 3.09 2.515Z" 
@@ -26,7 +29,7 @@
 			<ul>
 				<li><a href="/">Over mojo</a></li>
 				<li><a href="/">Concert agenda</a></li>
-				<li>Klantenservice</li>
+				<li><button>Klantenservice</button></li>
 				<li><a href="/" aria-label="Logo van Mojo"><svg width="155" height="40" viewBox="0 0 155 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Homepage Mojo"><path fill-rule="evenodd" clip-rule="evenodd" d="M49.629 19.565c0-11.13 8.205-19.212 19.506-19.212 11.306 0 19.513 8.088 19.513 19.212 0 11.19-8.029 19.008-19.513 19.008-11.484 0-19.506-7.817-19.506-19.008Zm12.62.197c0 4.381 2.83 7.44 6.886 7.44 4.058 0 6.89-3.073 6.89-7.44 0-4.368-2.9-7.537-6.89-7.537-3.99 0-6.887 3.155-6.887 7.537Zm-38.357 1.542L29.194.96H42.04l5.792 37.027H35.754l-2.398-21.084-5.96 21.084h-7.239l-5.693-21.123-2.382 21.123H0L5.701.96h12.984l5.207 20.344ZM135.489.353c-11.303 0-19.507 8.081-19.507 19.212 0 11.19 8.014 19.008 19.507 19.008 11.492 0 19.511-7.817 19.511-19.008C155 8.441 146.794.353 135.489.353Zm0 26.849c-4.055 0-6.889-3.059-6.889-7.44 0-4.382 2.899-7.537 6.889-7.537s6.888 3.169 6.888 7.537c0 4.367-2.825 7.44-6.888 7.44Zm-39.272.905c2.558 0 2.558-3.335 2.558-4.43V.977h12.608V26.75c0 7.64-5.055 12.976-12.292 12.976-3.398 0-7.733-1.683-10.867-4.202 2.422-2.81 4.11-6.231 4.903-9.93.615 1.328 1.496 2.515 3.09 2.515Z" 
 					fill="currentColor"></path></svg></a></li>
 				<li><a href="/">Nederlandse</a></li>
@@ -34,11 +37,11 @@
 			</ul>
 			<nav>
 			<ul>
-				<div>
+				<li>
 					<button>X</button>
-				<a href="/" aria-label="Logo van Mojo"><svg viewBox="0 0 155 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Homepage Mojo"><path fill-rule="evenodd" clip-rule="evenodd" d="M49.629 19.565c0-11.13 8.205-19.212 19.506-19.212 11.306 0 19.513 8.088 19.513 19.212 0 11.19-8.029 19.008-19.513 19.008-11.484 0-19.506-7.817-19.506-19.008Zm12.62.197c0 4.381 2.83 7.44 6.886 7.44 4.058 0 6.89-3.073 6.89-7.44 0-4.368-2.9-7.537-6.89-7.537-3.99 0-6.887 3.155-6.887 7.537Zm-38.357 1.542L29.194.96H42.04l5.792 37.027H35.754l-2.398-21.084-5.96 21.084h-7.239l-5.693-21.123-2.382 21.123H0L5.701.96h12.984l5.207 20.344ZM135.489.353c-11.303 0-19.507 8.081-19.507 19.212 0 11.19 8.014 19.008 19.507 19.008 11.492 0 19.511-7.817 19.511-19.008C155 8.441 146.794.353 135.489.353Zm0 26.849c-4.055 0-6.889-3.059-6.889-7.44 0-4.382 2.899-7.537 6.889-7.537s6.888 3.169 6.888 7.537c0 4.367-2.825 7.44-6.888 7.44Zm-39.272.905c2.558 0 2.558-3.335 2.558-4.43V.977h12.608V26.75c0 7.64-5.055 12.976-12.292 12.976-3.398 0-7.733-1.683-10.867-4.202 2.422-2.81 4.11-6.231 4.903-9.93.615 1.328 1.496 2.515 3.09 2.515Z" 
+					<a href="/" aria-label="Logo van Mojo"><svg viewBox="0 0 155 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Homepage Mojo"><path fill-rule="evenodd" clip-rule="evenodd" d="M49.629 19.565c0-11.13 8.205-19.212 19.506-19.212 11.306 0 19.513 8.088 19.513 19.212 0 11.19-8.029 19.008-19.513 19.008-11.484 0-19.506-7.817-19.506-19.008Zm12.62.197c0 4.381 2.83 7.44 6.886 7.44 4.058 0 6.89-3.073 6.89-7.44 0-4.368-2.9-7.537-6.89-7.537-3.99 0-6.887 3.155-6.887 7.537Zm-38.357 1.542L29.194.96H42.04l5.792 37.027H35.754l-2.398-21.084-5.96 21.084h-7.239l-5.693-21.123-2.382 21.123H0L5.701.96h12.984l5.207 20.344ZM135.489.353c-11.303 0-19.507 8.081-19.507 19.212 0 11.19 8.014 19.008 19.507 19.008 11.492 0 19.511-7.817 19.511-19.008C155 8.441 146.794.353 135.489.353Zm0 26.849c-4.055 0-6.889-3.059-6.889-7.44 0-4.382 2.899-7.537 6.889-7.537s6.888 3.169 6.888 7.537c0 4.367-2.825 7.44-6.888 7.44Zm-39.272.905c2.558 0 2.558-3.335 2.558-4.43V.977h12.608V26.75c0 7.64-5.055 12.976-12.292 12.976-3.398 0-7.733-1.683-10.867-4.202 2.422-2.81 4.11-6.231 4.903-9.93.615 1.328 1.496 2.515 3.09 2.515Z" 
 					fill="currentColor"></path></svg></a>
-				</div>
+				</li>
 				<li><a href="/">Over mojo</a></li>
 				<li><a href="/">concertagenda</a></li>
 				<li><a href="/">klantenservice</a></li>
@@ -66,7 +69,7 @@
 				<li><a href="https://www.tiktok.com/@mojo_concerts" target="_blank" aria-label="Tiktok"><svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M7.5 0a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15Zm3.782 6.43-.26-.046a3.592 3.592 0 0 1-.9-.284 2.913 2.913 0 0 1-.88-.626V8.96c0 .773-.305 1.51-.852 2.056a2.904 2.904 0 0 1-4.111 0 2.9 2.9 0 0 1-.852-2.056c0-.774.305-1.51.852-2.056s1.282-.852 2.056-.852h.54v1.529h-.54c-.368 0-.716.144-.976.404s-.404.608-.404.975.144.715.404.975.608.404.976.404.715-.144.975-.404.404-.608.404-.972v-5.83h1.522l.076.14c.237.44.557.856.953 1.164.307.237.653.405 1.037.472l.27.048-.29 1.473Z">
 					</path></svg></a>
 				</li>
-				<li><a href="https://open.spotify.com/user/mojoconcerts"target="_blank" aria-label="Spotify"><svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.997.5C3.587.5 0 4.088 0 8.497 0 12.911 3.587 16.5 7.997 16.5 12.41 16.5 16 12.91 16 8.497 16 4.088 12.41.5 7.997.5ZM3.939 11.436a9.697 9.697 0 0 1 2.825-.425 9.52 9.52 0 0 1 4.595 1.18c.083.045.158.194.193.381.033.187.02.378-.035.477a.405.405 0 0 1-.556.16 8.74 8.74 0 0 0-6.776-.689.407.407 0 0 1-.514-.268c-.072-.233.076-.753.268-.816ZM3.59 8.489a12.103 12.103 0 0 1 3.173-.423c1.93 0 3.845.467 5.54 1.35a.486.486 0 0 1 .269.485.497.497 0 0 1-.057.189c-.151.296-.328.495-.44.495a.512.512 0 0 1-.233-.057 10.887 10.887 0 0 0-5.078-1.236c-.983-.002-1.963.13-2.91.39a.5.5 0 0 1-.614-.35c-.075-.281.097-.773.35-.843ZM3.5 6.565a.587.587 0 0 1-.715-.427c-.082-.332.125-.717.426-.793a14.91 14.91 0 0 1 3.552-.433c2.3 0 4.504.517 6.55 1.538a.592.592 0 0 1 .266.793c-.095.192-.302.399-.53.399a.616.616 0 0 1-.258-.058 13.35 13.35 0 0 0-6.028-1.417 13.7 13.7 0 0 0-3.263.398Z" 
+				<li><a href="https://open.spotify.com/user/mojoconcerts" target="_blank" aria-label="Spotify"><svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.997.5C3.587.5 0 4.088 0 8.497 0 12.911 3.587 16.5 7.997 16.5 12.41 16.5 16 12.91 16 8.497 16 4.088 12.41.5 7.997.5ZM3.939 11.436a9.697 9.697 0 0 1 2.825-.425 9.52 9.52 0 0 1 4.595 1.18c.083.045.158.194.193.381.033.187.02.378-.035.477a.405.405 0 0 1-.556.16 8.74 8.74 0 0 0-6.776-.689.407.407 0 0 1-.514-.268c-.072-.233.076-.753.268-.816ZM3.59 8.489a12.103 12.103 0 0 1 3.173-.423c1.93 0 3.845.467 5.54 1.35a.486.486 0 0 1 .269.485.497.497 0 0 1-.057.189c-.151.296-.328.495-.44.495a.512.512 0 0 1-.233-.057 10.887 10.887 0 0 0-5.078-1.236c-.983-.002-1.963.13-2.91.39a.5.5 0 0 1-.614-.35c-.075-.281.097-.773.35-.843ZM3.5 6.565a.587.587 0 0 1-.715-.427c-.082-.332.125-.717.426-.793a14.91 14.91 0 0 1 3.552-.433c2.3 0 4.504.517 6.55 1.538a.592.592 0 0 1 .266.793c-.095.192-.302.399-.53.399a.616.616 0 0 1-.258-.058 13.35 13.35 0 0 0-6.028-1.417 13.7 13.7 0 0 0-3.263.398Z" 
 					fill="currentColor"></path></svg></a>
 				</li>
 			</ul>
@@ -78,8 +81,8 @@
 		<dialog>
 			<form method="dialog">
 				<h2>Klantenservice</h2>
-				<label language="nl">Voornaam<input type="text"></label>
-				<label language="nl">Achternaam<input type="text"></label>
+				<label>Voornaam<input type="text"></label>
+				<label>Achternaam<input type="text"></label>
 				<label>E-mailadress<input type="text"></label>
 				<label>Stel hier je vraag<input type="text"></label>
 						
@@ -90,16 +93,17 @@
 		<a href="detailpagina.html">
 			<h2>Robbie Williams</h2>
 			<img src="images/robbie-williams-concert-mojo.jpg" alt="Foto van de zanger Robbie Williams">
-			<p> <time datetime="22 & 23 juni 2025"></time> Johan Cruijff ArenA — Amsterdam ZO</p>
+			<p>22 & 23 juni 2025</p>
+			<p>Johan Cruijff ArenA — Amsterdam ZO</p>
 		</a>
 		<form>
 			<!-- Vragen of dit de juiste manier is  -->
 			<fieldset>
 				<legend>Zoeken</legend>
-				<label for="Zoeken"><input type="text" name="Zoeken" placeholder="Zoeken naar evenementen" required minlength="4" size="10" />
+				<label for="Zoeken"> <input type="text" id="Zoeken" placeholder="Zoeken naar evenementen" required minlength="4" size="10" />
 				</label>
 				<button>
-					<p>Wanneer wil je gaan</p>
+					<span>Wanneer wil je gaan</span>
 					<!-- https://www.svgrepo.com/svg/35457/calendar-symbol -->
 					<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
 					viewBox="0 0 610.398 610.398"
@@ -137,15 +141,15 @@
 					<summary> kies evenement</summary>
 					<div>
 						<label for="Evenementen">
-						<input type="checkbox" name="Evenementen">
+						<input type="checkbox" id="Evenementen">
 						Evenementen
 						</label>
 						<label for="Concerten">
-						<input type="checkbox" name="Concerten">
+						<input type="checkbox" id="Concerten">
 						Concerten
 						</label>
 						<label for="Festivals">
-							<input type="checkbox" name="Festivals">
+							<input type="checkbox" id="Festivals">
 							Festivals
 						</label>
 					</div>
@@ -156,15 +160,15 @@
 					<!-- https://css-tricks.com/dynamic-dropdowns/ voor de code van de dropdown -->
 					<div>
 						<label for="rock">
-							<input type="checkbox" name="rock">
+							<input type="checkbox" id="rock">
 							Rock
 						</label>
 						<label for="pop">
-							<input type="checkbox" name="pop">
+							<input type="checkbox" id="pop">
 							Pop
 						</label>
 						<label for="Techno">
-							<input type="checkbox" name="Techno">
+							<input type="checkbox" id="Techno">
 							Techno
 						</label>
 					</div>
@@ -180,7 +184,7 @@
 					<a href=""> 
 						<img src="images/electric_callboy_-christian-ripekns.jpg" alt="foto van de band electric callboy">
 						<h3>Electric Callboy</h3>
-						<p><time datetime="17 januari 2026"></time></p>
+						<p>17 januari 2026</p>
 						<p>RTM Stage Rotterdam Ahoy — Rotterdam</p>
 					</a>
 				</li>
@@ -188,7 +192,7 @@
 					<a href="">
 						<img src="images/tatemcrae.jpg" alt="foto van tatemcrae">
 						<h3>Tate Mcrea</h3>
-						<p><time datetime="28 mei 2025"></time></p>
+						<p>28 mei 2025</p>
 						<p>Ziggo Dome — Amsterdam</p>
 					</a>
 				</li>
@@ -196,7 +200,7 @@
 					<a href="">
 						<img src="images/stray-kids-concert-mojo.jpg" alt="foto van stray kids">
 						<h3>Stray kids</h3>
-						<p><time datetime="11 juli 2025"></time></p>
+						<p>11 juli 2025</p>
 						<p>Johan Cruijff ArenA — Amsterdam ZO</p>
 					</a>
 				</li>
@@ -204,7 +208,7 @@
 					<a href="">
 						<img src="images/onerepubllic-concert-mojo.jpg" alt="foto van de band one republic">
 						<h3>One republic</h3>
-						<p><time datetime="28 september 2025"></time></p>
+						<p>28 september 2025</p>
 						<p>Ziggo Dome — Amsterdam</p>
 					</a>
 				</li>
@@ -212,7 +216,7 @@
 					<a href="">
 						<img src="images/jamiroquai-concert-mojo.jpg" alt="foto van de zanger Jamiroquai">
 						<h3>Jamiroquai</h3>
-						<p><time datetime="25 november 2025"></time></p>
+						<p>25 november 2025</p>
 						<p>Ziggo Dome — Amsterdam</p>
 					</a>
 				</li>
@@ -220,7 +224,7 @@
 					<a href="">
 						<img src="images/lp-press-photo-credit-james-minchin-iii.jpg" alt="foto van de zang groep linkin park">
 						<h3>Linkin park</h3>
-						<p><time datetime="26 juni 2025"></time></p>
+						<p>26 juni 2025</p>
 						<p>Gelredome Arnhem</p>
 					</a>
 				</li>
@@ -228,7 +232,7 @@
 					<a href="">
 						<img src="images/static_tm-artistimage_2426x1365_pitbull_2024_national.jpg" alt="foto van de zanger Pitbull">
 						<h3>Pitbull</h3>
-						<p><time datetime="26 juni 2025"></time></p>
+						<p>26 juni 2025</p>
 						<p>Gelredome Arnhem</p>
 					</a>
 				</li>
@@ -236,7 +240,7 @@
 					<a href="">
 						<img src="images/kehlani.jpg" alt="foto van de zangeres Kehlani">
 						<h3>Kehlani</h3>
-						<p><time datetime="21 januari 2025"></time></p>
+						<p>21 januari 2025</p>
 						<p>Afas live Amsterdam</p>
 					</a>
 				</li>
@@ -244,7 +248,7 @@
 					<a href="">
 						<img src="images/pinkpop.jpg" alt="foto van het festival pinkpop met twee meiden voor een pinkpop tent">
 						<h3>Pinkpop</h3>
-						<p><time datetime="20 tot en met 22 juni 2025"></time></p>
+						<p>20 tot en met 22 juni 2025</p>
 						<p>Megaland - Landgraaf</p>
 					</a>
 				</li>
@@ -258,7 +262,7 @@
 					<a href="/">
 						<img src="images/kygo-concert-mojo.jpg" alt="een foto van de zanger Kygo voor een oranje ">
 						<h3>Kygo</h3>
-						<p><time datetime="26 november 2024"></time></p>
+						<p>26 november 2024</p>
 						<p>Ziggo dome - Amsterdam</p>
 					</a>
 				</article>
@@ -266,7 +270,7 @@
 					<a href="/">
 						<img src="images/jacob-collier-djesse-europe-uk-tour-2024.jpg" alt="een foto van de zanger jacob collier">
 						<h3>Jacob Collier</h3>
-						<p><time datetime="26 & 27 november 2024"></time></p>
+						<p>26 & 27 november 2024</p>
 						<p>AFAS Live - Amsterdam</p>
 					</a>
 				</article>
@@ -274,7 +278,7 @@
 					<a href="/">
 						<img src="images/lady-blackbird-concert-mojo.jpg" alt="een foto van lady blackbird">
 						<h3>Lady Blackbird</h3>
-						<p><time datetime="27 november 2024"></time></p>
+						<p>27 november 2024</p>
 						<p>Carre - Amsterdam</p>
 					</a>
 				</article>
@@ -282,7 +286,7 @@
 					<a href="/">
 						<img src="images/jonna-fraser-live.jpg" alt="een foto van Jonna Fraser">
 						<h3>Jonna Fraser</h3>
-						<p><time datetime="28 november 2024"></time></p>
+						<p>28 november 2024</p>
 						<p>Ziggo Dome - Amsterdam</p>
 					</a>
 				</article>
@@ -292,7 +296,7 @@
 			<h2>Bekijk de agenda voor meer</h2>
 			<article>
 				<a href="/">
-					<p><time datetime="17 november"></time>17 nov.</p>
+					<p>17 nov.</p>
 					<!-- Dit moet een div worden omdat dit naast die 17 nov moet komen te staan -->
 					<div>
 						<h3>Wheel</h3>
@@ -303,7 +307,7 @@
 			</article>
 			<article>
 				<a href="/">
-					<p><time datetime="27 november"></time>27 nov.</p>
+					<p>27 nov.</p>
 					<div>
 						<h3>Beast + Benighted + coffin feeder</h3>
 					 	<p>013 - tilburg</p>
@@ -313,7 +317,7 @@
 			</article>
 			<article>
 				<a href="/">
-					<p><time datetime="27 november"></time>27 nov.</p>
+					<p>27 nov.</p>
 					<div>
 						 <h3>Haevn</h3>
 						 <p>TrivoliVredenburg - Utrecht</p>
@@ -323,7 +327,7 @@
 			</article>
 			<article>
 				<a href="/">
-					<p><time datetime="27 november"></time>27 nov.</p>
+					<p>27 nov.</p>
 					 <div>
 						<h3>Bob Vylan</h3>
 					 	<p>Patronaat - Haarlem</p>
@@ -333,7 +337,7 @@
 			</article>
 			<article>
 				<a href="/">
-					<p><time datetime="27 november"></time>27 nov.</p>
+					<p>27 nov.</p>
 					<div>
 						<h3>My baby</h3>
 						<p>Schouwburg Deventer - Deventer</p>
@@ -343,7 +347,7 @@
 			</article>
 			<article>
 				<a href="/">
-					<p><time datetime="27 november"></time>27 nov.</p>
+					<p>27 nov.</p>
 					 <div>
 						<h3>S10</h3>
 					 	<p>NTGent - Gent</p>
@@ -357,7 +361,7 @@
 			<a href="">
 				<img src="images/inhaler32579.jpg" alt="foto van de band genaamd inhaler">
 				<h3>Inhaler</h3>
-				<p><time datetime="10 mei 2025"></time></p>
+				<p>10 mei 2025</p>
 				<p>ziggo Dome - Amsterdam</p>
 			</a>
 		</section>
@@ -367,9 +371,7 @@
 				<a href="">
 					<img src="images/winterheul-2024-beeld-zonder-info-alleen-gebruiken-wanneer-info-in-tekst-staat-1600x1000.jpg" alt=" Een magische foto van een ijsvogel in een glazenbol met allemaal magische slierten.">
 					<h3>Winterheul</h3>
-					<p><time datetime="13 december 2024 - 5 januari 2025"></time></p>
-					<p>Apenheul - Apeldoorn</p>
-					<button> > </button>
+					<p>13 december 2024 - 5 januari 2025</p>
 				</a>
 			</article>
 		</section>
@@ -379,7 +381,7 @@
 				<a href="">
 					<img src="images/the-rock-circus.jpg" alt="een foto van ee festival met feestvierende mensen en oranje confetti">
 					<h3>The rock circus 2025</h3>
-					<p><time datetime="17, 18 en 19 oktober 2025"></time></p>
+					<p>17, 18 en 19 oktober 2025</p>
 					<p>Brabanthallen - 's Hertogenbosch</p>
 				</a>
 			</article>
@@ -406,10 +408,9 @@
 			<li><a href="https://ilovemyears.nl/"><img src="images/ilme.jpg" alt="Logo van i love my ears"></a></li>
 			<li><a href="https://weetwaarjekoopt.nl/"><img src="images/wwjk.jpeg" alt="Logo vanweet waar je koopt"></a></li>
 		</ul>
-		
+		<section>
+		<h2>Volg mojo</h2>
 		<ul>
-			<p>Volg Mojo</p>
-			<div>
 				<li>
 					<a href="https://www.facebook.com/mojoconcerts" target="_blank" aria-label="Facebook"><svg viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M.333 7.537c0 3.315 2.408 6.07 5.556 6.63V9.352H4.222V7.5H5.89V6.018c0-1.666 1.074-2.592 2.593-2.592.48 0 1 .074 1.48.148v1.704h-.85c-.816 0-1 .407-1 .926V7.5H9.89l-.296 1.852H8.11v4.815c3.148-.56 5.556-3.315 5.556-6.63 0-3.687-3-6.704-6.667-6.704S.333 3.85.333 7.537Z" 
 					fill="currentColor"></path></svg>
@@ -428,7 +429,7 @@
 					fill="currentColor"></path></svg></a>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/company/mojo-concerts" target="_blank" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 50 50"><path fill="currentColor" d="M49.999 30.43V49H39.281V31.674c0-4.354-1.549-7.324-5.428-7.324-2.961 0-4.725 2.002-5.5 3.938-.283.691-.354 1.656-.354 2.625V49h-10.72s.145-29.348 0-32.389h10.719v4.592c-.021.035-.051.07-.07.104h.07v-.104c1.424-2.205 3.968-5.352 9.66-5.352 7.054.001 12.341 4.629 12.341 14.579zM6.066 1C2.399 1 0 3.416 0 6.594c0 3.109 2.33 5.6 5.924 5.6h.072c3.738 0 6.063-2.488 6.063-5.6C11.988 3.416 9.733 1 6.066 1zM.636 49h10.716V16.611H.636V49z">
+					<a href="https://www.linkedin.com/company/mojo-concerts" target="_blank" aria-label="LinkedIn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><path fill="currentColor" d="M49.999 30.43V49H39.281V31.674c0-4.354-1.549-7.324-5.428-7.324-2.961 0-4.725 2.002-5.5 3.938-.283.691-.354 1.656-.354 2.625V49h-10.72s.145-29.348 0-32.389h10.719v4.592c-.021.035-.051.07-.07.104h.07v-.104c1.424-2.205 3.968-5.352 9.66-5.352 7.054.001 12.341 4.629 12.341 14.579zM6.066 1C2.399 1 0 3.416 0 6.594c0 3.109 2.33 5.6 5.924 5.6h.072c3.738 0 6.063-2.488 6.063-5.6C11.988 3.416 9.733 1 6.066 1zM.636 49h10.716V16.611H.636V49z">
 					</path></svg></a>
 				</li>
 				<li>
@@ -436,12 +437,12 @@
 					</path></svg></a>
 				</li>
 				<li>
-					<a href="https://open.spotify.com/user/mojoconcerts"target="_blank" aria-label="Spotify"><svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.997.5C3.587.5 0 4.088 0 8.497 0 12.911 3.587 16.5 7.997 16.5 12.41 16.5 16 12.91 16 8.497 16 4.088 12.41.5 7.997.5ZM3.939 11.436a9.697 9.697 0 0 1 2.825-.425 9.52 9.52 0 0 1 4.595 1.18c.083.045.158.194.193.381.033.187.02.378-.035.477a.405.405 0 0 1-.556.16 8.74 8.74 0 0 0-6.776-.689.407.407 0 0 1-.514-.268c-.072-.233.076-.753.268-.816ZM3.59 8.489a12.103 12.103 0 0 1 3.173-.423c1.93 0 3.845.467 5.54 1.35a.486.486 0 0 1 .269.485.497.497 0 0 1-.057.189c-.151.296-.328.495-.44.495a.512.512 0 0 1-.233-.057 10.887 10.887 0 0 0-5.078-1.236c-.983-.002-1.963.13-2.91.39a.5.5 0 0 1-.614-.35c-.075-.281.097-.773.35-.843ZM3.5 6.565a.587.587 0 0 1-.715-.427c-.082-.332.125-.717.426-.793a14.91 14.91 0 0 1 3.552-.433c2.3 0 4.504.517 6.55 1.538a.592.592 0 0 1 .266.793c-.095.192-.302.399-.53.399a.616.616 0 0 1-.258-.058 13.35 13.35 0 0 0-6.028-1.417 13.7 13.7 0 0 0-3.263.398Z" 
+					<a href="https://open.spotify.com/user/mojoconcerts" target="_blank" aria-label="Spotify"><svg viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.997.5C3.587.5 0 4.088 0 8.497 0 12.911 3.587 16.5 7.997 16.5 12.41 16.5 16 12.91 16 8.497 16 4.088 12.41.5 7.997.5ZM3.939 11.436a9.697 9.697 0 0 1 2.825-.425 9.52 9.52 0 0 1 4.595 1.18c.083.045.158.194.193.381.033.187.02.378-.035.477a.405.405 0 0 1-.556.16 8.74 8.74 0 0 0-6.776-.689.407.407 0 0 1-.514-.268c-.072-.233.076-.753.268-.816ZM3.59 8.489a12.103 12.103 0 0 1 3.173-.423c1.93 0 3.845.467 5.54 1.35a.486.486 0 0 1 .269.485.497.497 0 0 1-.057.189c-.151.296-.328.495-.44.495a.512.512 0 0 1-.233-.057 10.887 10.887 0 0 0-5.078-1.236c-.983-.002-1.963.13-2.91.39a.5.5 0 0 1-.614-.35c-.075-.281.097-.773.35-.843ZM3.5 6.565a.587.587 0 0 1-.715-.427c-.082-.332.125-.717.426-.793a14.91 14.91 0 0 1 3.552-.433c2.3 0 4.504.517 6.55 1.538a.592.592 0 0 1 .266.793c-.095.192-.302.399-.53.399a.616.616 0 0 1-.258-.058 13.35 13.35 0 0 0-6.028-1.417 13.7 13.7 0 0 0-3.263.398Z" 
 					fill="currentColor"></path></svg></a>
 				</li>
-			</div>
-			<p>nieuwsbrief</p>
 		</ul>
+		<p>Nieuwsbrief</p>
+		</section>
 		<ul>
 			<li><a href="/">Voorwaarden</a></li>
 			<li><a href="/">Privacy</a></li>
@@ -451,7 +452,7 @@
 			<li><a href="/">mojo</a></li>
 		</ul>
 		<span></span>
-		<a href="/" aria-label="Logo van Mojo"><svg width="155" height="40" viewBox="0 0 155 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Homepage Mojo"><path fill-rule="evenodd" clip-rule="evenodd" d="M49.629 19.565c0-11.13 8.205-19.212 19.506-19.212 11.306 0 19.513 8.088 19.513 19.212 0 11.19-8.029 19.008-19.513 19.008-11.484 0-19.506-7.817-19.506-19.008Zm12.62.197c0 4.381 2.83 7.44 6.886 7.44 4.058 0 6.89-3.073 6.89-7.44 0-4.368-2.9-7.537-6.89-7.537-3.99 0-6.887 3.155-6.887 7.537Zm-38.357 1.542L29.194.96H42.04l5.792 37.027H35.754l-2.398-21.084-5.96 21.084h-7.239l-5.693-21.123-2.382 21.123H0L5.701.96h12.984l5.207 20.344ZM135.489.353c-11.303 0-19.507 8.081-19.507 19.212 0 11.19 8.014 19.008 19.507 19.008 11.492 0 19.511-7.817 19.511-19.008C155 8.441 146.794.353 135.489.353Zm0 26.849c-4.055 0-6.889-3.059-6.889-7.44 0-4.382 2.899-7.537 6.889-7.537s6.888 3.169 6.888 7.537c0 4.367-2.825 7.44-6.888 7.44Zm-39.272.905c2.558 0 2.558-3.335 2.558-4.43V.977h12.608V26.75c0 7.64-5.055 12.976-12.292 12.976-3.398 0-7.733-1.683-10.867-4.202 2.422-2.81 4.11-6.231 4.903-9.93.615 1.328 1.496 2.515 3.09 2.515Z" 
+		<a href="/" aria-label="Logo van Mojo" ><svg width="155" height="40" viewBox="0 0 155 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Homepage Mojo"><path fill-rule="evenodd" clip-rule="evenodd" d="M49.629 19.565c0-11.13 8.205-19.212 19.506-19.212 11.306 0 19.513 8.088 19.513 19.212 0 11.19-8.029 19.008-19.513 19.008-11.484 0-19.506-7.817-19.506-19.008Zm12.62.197c0 4.381 2.83 7.44 6.886 7.44 4.058 0 6.89-3.073 6.89-7.44 0-4.368-2.9-7.537-6.89-7.537-3.99 0-6.887 3.155-6.887 7.537Zm-38.357 1.542L29.194.96H42.04l5.792 37.027H35.754l-2.398-21.084-5.96 21.084h-7.239l-5.693-21.123-2.382 21.123H0L5.701.96h12.984l5.207 20.344ZM135.489.353c-11.303 0-19.507 8.081-19.507 19.212 0 11.19 8.014 19.008 19.507 19.008 11.492 0 19.511-7.817 19.511-19.008C155 8.441 146.794.353 135.489.353Zm0 26.849c-4.055 0-6.889-3.059-6.889-7.44 0-4.382 2.899-7.537 6.889-7.537s6.888 3.169 6.888 7.537c0 4.367-2.825 7.44-6.888 7.44Zm-39.272.905c2.558 0 2.558-3.335 2.558-4.43V.977h12.608V26.75c0 7.64-5.055 12.976-12.292 12.976-3.398 0-7.733-1.683-10.867-4.202 2.422-2.81 4.11-6.231 4.903-9.93.615 1.328 1.496 2.515 3.09 2.515Z" 
 			fill="currentColor"></path></svg></a>
 	</footer>
 	<script defer src="scripts/script.js"></script>

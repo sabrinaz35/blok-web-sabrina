@@ -222,12 +222,23 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-  In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify content het niet meer deed, terwijl ik wel op de container een display flex had gezet. 
-   <img src="readme-images/probleem-met-justify-content.png" height="375px" alt="Screenshot code een van het probleem justify content">
-   Dit element wilde ik aan het begin plaatsen, maar op de een of andere manier wilde hij dat niet doen. 
+  Hieronder zie je alle afbeeldingen van de checklist die ik heb ingevuld. Er zijn heel wat dingen verbeterd, zo is de html beter gevalidate en hebben de heading levels een veel betere volgorde dan bij de orginele site. Daarnaast is er in deze site ook beter gebruik gemaakt van unordered lists. 
+   <img src="readme-image/wcag2-1.jpg" height="375px" alt="De eerste pagina van de wcag checklist test">
+   <img src="readme-image/wcag2-2.jpg" height="375px" alt="De tweede pagina van de wcag checklist test">
+   <img src="readme-image/wcag2-3.jpg" height="375px" alt="De derde pagina van de wcag checklist test">
+   <img src="readme-image/wcag2-4.jpg" height="375px" alt="De vierde pagina van de wcag checklist test">
+   <img src="readme-image/wcag2-5.jpg" height="375px" alt="De vijfde pagina van de wcag checklist test">
 
-   Daarnaast dat ik bezig was met het maken van de tweede pagina, kan je dan gewoon gebruik maken van de code die je hebt geschreven voor de eerste pagina en dan daarna de andere dingen los noteren, die je dan extra anders wilt hebben? Of moet je dan alles opnieuw herhalen? want anders wordt het niet echt overzichtelijk. 
-    <img src="readme-images/vraag-over-vormgeving.png" alt="Screenshot code met dezelfde achtergrond kleur en padding">
+Daarnaast zijn er nog wel wat punten die verbeterd kunnen worden om de site toegankelijk te kunnen maken door bijvoorbeeld bij de video's wel een transcriptie te zetten, of dat aan te bieden door er een button te plaatsen. 
+
+Ook heb ik gemerkt met de screenreader, dat zodra hij bij de iframe van de spotify is dat hij dan daar ook heading levels in heeft. Je mag maar 1 h1 in je pagina hebben, maar daar zit er dus ook een in. Plus met de screenreader gaat hij ook elk liedje langs met een h3 en een h4. Maar er zitten vijftig nummers in de lijst, dus je hoort dit vijftig keer. Dit is natuurlijk niet echt gebruiksvriendelijk en er is ook geen mogelijkheid om dit te skippen.
+
+Aanbevelingen:
+Voor de frame van spotify zou in de toekomst een skip link moeten maken, zodat je dat onderdeel kan overslaan. En je de rest van de content gewoon kan beluisteren.
+
+Ook als mensen een transcriptie voor de video willen zou dat ook beschikbaar moeten zijn. 
+Als ik voor surface plane had gekozen, zou ik een aantal buttons toevoegen om zo verschillende opties te bieden om de site nog toegangelijker te maken, zoals bijvoorbeeld een lichte interface inplaats van het donkerblauwe achtergrond wat er nu is. 
+
 </details>
 
 
@@ -240,17 +251,22 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify content het niet meer deed, terwijl ik wel op de container een display flex had gezet. 
+   <img src="readme-images/probleem-met-justify-content.png" height="375px" alt="Screenshot code een van het probleem justify content">
+   Dit element wilde ik aan het begin plaatsen, maar op de een of andere manier wilde hij dat niet doen. 
+
+   Daarnaast dat ik bezig was met het maken van de tweede pagina, kan je dan gewoon gebruik maken van de code die je hebt geschreven voor de eerste pagina en dan daarna de andere dingen los noteren, die je dan extra anders wilt hebben? Of moet je dan alles opnieuw herhalen? want anders wordt het niet echt overzichtelijk. 
+    <img src="readme-images/vraag-over-vormgeving.png" alt="Screenshot code met dezelfde achtergrond kleur en padding">
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Sabrina                                        | student 2          | student 3    | student 4        |
+  | ---                                            | ---                | ---          | ---              |
+  | WCAG/Aanbeveling documentatie                  | en dit             | en ik dit    | en dan ik dat    |
+  | Kan ik te veel regels css hebben               | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | wat wordt er met karakteristieken bij eindgesprek   | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
@@ -277,13 +293,13 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Tijdens dit blok heb ik ontzettend veel geleerd, ik heb geleerd hoe ik iets responsive moet maken, ik heb voor het eerst een grid gebruikt, maar ook position. Bovendien ben ik trots dat ik het zover heb geshcopt met het na proberen te maken van de website. Wat wel goed ging was het schrijven van de html en de basis van de css.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Wat ik wel wat lastig vond was de tweede site stijlen, nadat ik de eerste had gedaan, omdat ik deels wel wat kon hergebruiken, maar ook heel veel niet en als ik dan iets aanpaste veranderde er ook weer iets anders. Daardoor had ik het idee alsof er gewoon geen einde aan kwam en ik die fouten steeds maar moest blijven aanpassen. 
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
 </details>
@@ -314,6 +330,8 @@ Ik heb gedurende het blok ook hulp gehad bij sommige code van Hadil en Ali.
   10. https://codepen.io/Sabrina-z/pen/pvzzrev 
   11. https://cssgrid-generator.netlify.app/ 
   12. https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path 
-  13. https://www.codecenter.nl/pr/tutorial/html/aflinks 
+  13. https://www.codecenter.nl/pr/tutorial/html/aflinks
+  14. https://validator.w3.org/nu/#textarea 
+  15. https://chatgpt.com/c/6751764b-7658-8010-91c0-0972c8e5969e  met de prompt "Waarom heeft dit een foutcode"
 
 </details>
