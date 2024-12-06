@@ -262,10 +262,10 @@ In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | Sabrina                                        | student 2          | student 3    | student 4        |
-  | ---                                            | ---                | ---          | ---              |
-  | WCAG/Aanbeveling documentatie                  | en dit             | en ik dit    | en dan ik dat    |
-  | Kan ik te veel regels css hebben               | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | Sabrina                                             | student 2          | student 3    | student 4        |
+  | ---                                                 | ---                | ---          | ---              |
+  | WCAG/Aanbeveling documentatie                       | en dit             | en ik dit    | en dan ik dat    |
+  | Kan ik te veel regels css hebben                    | dit als er tijd is | nog een punt | dit wil ik zeker |
   | wat wordt er met karakteristieken bij eindgesprek   | ...                | ...          | ...              |
 
 

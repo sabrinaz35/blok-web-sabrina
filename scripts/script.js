@@ -1,8 +1,8 @@
-// JavaScript Document
+// JavaScript Document test
 console.log("hi");
 
 
-// Tevoorschijn laten komen van het menu
+// Tevoorschijn laten komen van het menu en ook weer sluiten ervan
 const headerEl = document.querySelector('header')
 const menuButton = document.querySelector("header nav:first-of-type button");
 let deNav = document.querySelector("header nav nav");
@@ -26,6 +26,10 @@ function closeMenu(){
     deNav.classList.remove("menuZichtbaar");
 }
 
+
+//Code voor het scrollen en een achtergrond krijgen van de header, zodra er gescrollt wordt. 
+//Dit hbe ik met behulp van Ali geschreven
+
 window.addEventListener('scroll', ()=>{
     if (scrollY > 10){
         headerEl.classList.add('active')
@@ -36,7 +40,7 @@ window.addEventListener('scroll', ()=>{
 
 
 
-// Voor de form popup
+// Voor de dialog popup
 const klantenserviceButtonOpen = document.querySelector ("header nav ul li:nth-of-type(3)");
 const klantenServiceDialog = document.querySelector ("dialog");
 const klantenserviceButtonClose = document.querySelector ("dialog button:nth-of-type(1)");
