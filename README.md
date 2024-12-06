@@ -231,7 +231,11 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
 
 Daarnaast zijn er nog wel wat punten die verbeterd kunnen worden om de site toegankelijk te kunnen maken door bijvoorbeeld bij de video's wel een transcriptie te zetten, of dat aan te bieden door er een button te plaatsen. 
 
-Ook heb ik gemerkt met de screenreader, dat zodra hij bij de iframe van de spotify is dat hij dan daar ook heading levels in heeft. Je mag maar 1 h1 in je pagina hebben, maar daar zit er dus ook een in. Plus met de screenreader gaat hij ook elk liedje langs met een h3 en een h4. Maar er zitten vijftig nummers in de lijst, dus je hoort dit vijftig keer. Dit is natuurlijk niet echt gebruiksvriendelijk en er is ook geen mogelijkheid om dit te skippen.
+Ook heb ik gemerkt met de screenreader, dat zodra hij bij de iframe van de spotify is dat hij dan daar ook heading levels in heeft. Je mag maar 1 h1 in je pagina hebben, maar daar zit er dus ook een in. Plus met de screenreader gaat hij ook elk liedje langs met een h3 en een h4. Maar er zitten vijftig nummers in de lijst, dus je hoort dit vijftig keer. Dit is natuurlijk niet echt gebruiksvriendelijk en er is ook geen mogelijkheid om dit te skippen. 
+
+Mijn stappen: 
+Daarnaast kwam ik er ook achter dat het handig is om extra aria-labels toe te voegen aan lijstjes. Zo kan de schreen reader voorlezen wat voor een lijst zij voor zich hebben.
+<img src="readme-images/ullist-arialabels.png" height="375px" alt="Screenshot code een van de hover homepagina.">
 
 Aanbevelingen:
 Voor de frame van spotify zou in de toekomst een skip link moeten maken, zodat je dat onderdeel kan overslaan. En je de rest van de content gewoon kan beluisteren.
@@ -272,9 +276,9 @@ In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Over die wcag de aanbeveling noteren. Maar eventueel een design ervoor in figma maken. Nog even navragen bij Vasilis.
+  - Over die wcag de aanbeveling noteren. Maar eventueel een design ervoor in figma maken. Nog even navragen bij Vasilis. Je moet bij je aanbeveling alleen je inzichten noteren en wat niet is gelukt en wat wel.
   - 320px beginnen met responsive en telkens met 20em kijken of het nog klopt.
-  - Karakeristieken?? In de readMe wat moet daar? Ook even vragen aan Vasilis
+  - Karakeristieken?? In de readMe wat moet daar? Ook even vragen aan Vasilis. Je moet daar screenshots van je officiele pagina plaatsen.
   - Tabjes even naar kijken. Sneltoets formateren: cmd shift f
 
 </details>
