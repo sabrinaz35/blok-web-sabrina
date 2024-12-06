@@ -22,6 +22,15 @@
 	--font: "Futura1", Futura, Helvetica, Arial, sans-serif;
 	--color-text-light: hsla(0, 0%, 100%, 0.7);
 	/* Hue saturation lightness en aa */
+  --rainbow-gradient:linear-gradient(
+    40deg,
+    orange,
+    hotpink,
+    crimson,
+    purple,
+    yellow,
+    orange
+  )
   }
   
   /* https://font.download/font/futura-pt  */
@@ -641,6 +650,12 @@ main form fieldset details {
   padding: 1em;
 }
 
+@media (width > 60em) {
+  main form fieldset details{
+    position: relative;
+  }
+}
+
 main form fieldset button:nth-of-type(1) {
   display: flex;
   align-items: center;
@@ -652,6 +667,10 @@ main form fieldset button:nth-of-type(1) {
   main form fieldset button:nth-of-type(1) {
     width: 20rem;
   }
+}
+
+main form fieldset button:nth-of-type(1)>span {
+  font-size: 16px;
 }
 
 main form fieldset button:hover {
@@ -673,16 +692,13 @@ main form fieldset button:hover svg {
   fill: #083ade;
 }
 
-main form fieldset details {
-  position: relative;
-}
 
 main form fieldset details div {
   position: absolute;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
-  height: 10vh;
+  height: 13vh;
   left: 0;
   width: 100%;
   color: blue;
@@ -956,3 +972,28 @@ iframe:nth-of-type(2) {
     width: 20em;
   }
 }
+
+
+
+/****************/
+/* Animatie	*/
+/****************/
+/* @keyframes discorainbow {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+mmain form fieldset details:nth-of-type(2) label:has([id="Disco"]:checked) *{
+  background-image: var(--rainbow-gradient);
+  background-size:200% 200%;
+  background-position:left bottom;
+  animation-name: disco-rainbow;
+  animation-duration:1s;
+  animation-timing-function:linear;
+  animation-iteration-count: infinite;
+} */
+
