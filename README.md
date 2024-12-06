@@ -223,11 +223,11 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
   Hieronder zie je alle afbeeldingen van de checklist die ik heb ingevuld. Er zijn heel wat dingen verbeterd, zo is de html beter gevalidate en hebben de heading levels een veel betere volgorde dan bij de orginele site. Daarnaast is er in deze site ook beter gebruik gemaakt van unordered lists. 
-   <img src="readme-image/wcag2-1.jpg" height="375px" alt="De eerste pagina van de wcag checklist test">
-   <img src="readme-image/wcag2-2.jpg" height="375px" alt="De tweede pagina van de wcag checklist test">
-   <img src="readme-image/wcag2-3.jpg" height="375px" alt="De derde pagina van de wcag checklist test">
-   <img src="readme-image/wcag2-4.jpg" height="375px" alt="De vierde pagina van de wcag checklist test">
-   <img src="readme-image/wcag2-5.jpg" height="375px" alt="De vijfde pagina van de wcag checklist test">
+   <img src="readme-image/wcag21.png" height="375px" alt="De eerste pagina van de wcag checklist test">
+   <img src="readme-image/wcag22.png" height="375px" alt="De tweede pagina van de wcag checklist test">
+   <img src="readme-image/wcag23.png" height="375px" alt="De derde pagina van de wcag checklist test">
+   <img src="readme-image/wcag24.png" height="375px" alt="De vierde pagina van de wcag checklist test">
+   <img src="readme-image/wcag25.png" height="375px" alt="De vijfde pagina van de wcag checklist test">
 
 Daarnaast zijn er nog wel wat punten die verbeterd kunnen worden om de site toegankelijk te kunnen maken door bijvoorbeeld bij de video's wel een transcriptie te zetten, of dat aan te bieden door er een button te plaatsen. 
 
@@ -272,10 +272,10 @@ In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Over die wcag de aanbeveling noteren. Maar eventueel een design ervoor in figma maken. Nog even navragen bij Vasilis.
+  - 320px beginnen met responsive en telkens met 20em kijken of het nog klopt.
+  - Karakeristieken?? In de readMe wat moet daar? Ook even vragen aan Vasilis
+  - Tabjes even naar kijken. Sneltoets formateren: cmd shift f
 
 </details>
 

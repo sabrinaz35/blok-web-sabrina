@@ -125,7 +125,7 @@ header.active {
 }
 
 header nav nav.menuZichtbaar {
-	translate: 0% 0%;	
+	transform: translateX(0%);	
 
 }
 
@@ -231,7 +231,7 @@ header nav nav {
 	bottom:0;
   	align-items: flex-start;
 	transition: .2s ease-in;
-	translate: -100% 0%; 
+	transform: translateX(-100%);	
 	width: 100vw;
 	text-transform: uppercase;
 	overflow: hidden;
@@ -253,16 +253,6 @@ header nav nav ul:nth-of-type(2) {
 	gap: 2rem;
   width: 100%;
 }
-
-
-
-
-/* header nav nav ul:nth-of-type(2) li a, [class = "detailpagina"] main section:nth-of-type(1) ul li a {
-	width: 60%;
-	display: flex;
-	justify-self: center;
-	align-items: center;
-} */
 
 header nav > ul {
 	display: none;
@@ -929,7 +919,6 @@ iframe:nth-of-type(2){
 /****************/
 /* Section 4 pagina 2*/
 /****************/
-/* deze wil ook niet center */
 [class = "detailpagina"] main section:nth-of-type(4) {
 	gap: 1rem;
 }
@@ -940,7 +929,6 @@ iframe:nth-of-type(2){
 
 [class = "detailpagina"] main section:nth-of-type(4) article {
 	align-self: flex-start;
-	/* Waarom is dit align self? ik dacht dat dat voor de verticale elementen was */
 	display: flex;
 	flex-direction: column;
 }
@@ -963,7 +951,7 @@ iframe:nth-of-type(2){
 	border: none;
 }
 
-/* vraag waarom dit nu ineens uit beeld komt + hij loopt nog niet helemaal goed responsive maar begin is er*/
+
 [class = "detailpagina"] main section:nth-of-type(4) article:last-of-type article:last-of-type div{
 	flex-direction: column;
 	align-items: flex-start;
