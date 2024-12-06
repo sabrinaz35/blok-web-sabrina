@@ -54,7 +54,7 @@ body, button {
 }
 
 main {
-	padding: 1rem;
+	padding: 0 1rem;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -116,7 +116,6 @@ header {
 	position: fixed; 
 	top: 0;
 	z-index: 2;
-	padding: 1rem;
 	transition: .2s;
 	width: 100vw;
 }
@@ -132,57 +131,88 @@ header nav nav.menuZichtbaar {
 
 header nav > button {
 	display: flex;
-    position: absolute;
-	left: .5em;
-	top: 2em;
+  position: relative;
 	cursor: pointer;
-	width: 3rem;
-	gap: .5rem;
-	justify-content: center;
+	width: 2rem;
+  aspect-ratio: 1/1;
+	/* gap: .5rem; */
+	justify-content: space-between;
 	flex-direction: column;
+  align-items: center;
 	background-color: transparent;
 	border: none;
 	margin: 0 1rem;
 	transition: .3s;
 }
 
-header nav span {
+header nav button span {
 	display: block;
-	width: 55%;
-	height: 2px;
+	width: 100%;
+  left: 0;
+  position: absolute;
+	height: 4px;
 	background-color: var(--main-text-color);
 	font-size: 35px;
+  transition: .5s;
 }
 
-header nav > button.menuzichtbaar span:nth-of-type(1){
-	rotate: 50deg;
-	transform: translateY(.4rem) translateX(-.1rem);
+header nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  justify-content: center;
 }
 
-header nav > button.menuzichtbaar span:nth-of-type(2){
-	rotate: -50deg;
-	transform: translateY(.5rem) translateX(-.1rem);
+header nav a {
+  display: block;
+  width: 7rem;
+  margin: 0 auto;
+}
+
+
+header nav button span:nth-of-type(1){
+  top: .6rem;
+}
+header nav button span:nth-of-type(2){
+  top: 1.2rem;
+}
+
+header nav button.active span:nth-of-type(1){
+  transform: rotate(45deg);
+  top: 1rem;
+}
+header nav button.active span:nth-of-type(2){
+  transform: rotate(-45deg);
+  top: 1rem;
 }
 
 header nav nav ul{
 	display: flex;
+  justify-content: flex-start;
 }
 
 header nav nav ul li {
-	font-size: 30px;
+	font-size: 30px;  
 	line-height: 3;
+  margin: 0;
+}
+
+header nav nav ul li a {
+  width: 100%;
+  font-size: 1.5rem;
+  text-align: left;
 }
 
 header nav nav ul:nth-of-type(1) li:nth-of-type(1) {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 2rem 0;
 }
 
 header nav nav ul:nth-of-type(1) li:nth-of-type(1)  a {
 	margin-right: auto;
-	width: 25%;
+	width: 100%;
 }
 
 header nav nav ul:nth-of-type(2) li:nth-of-type(1)  a svg {
@@ -199,6 +229,7 @@ header nav nav {
 	top:0;
 	padding: 1rem;
 	bottom:0;
+  align-items: flex-start;
 	transition: .2s ease-in;
 	translate: -100% 0%; 
 	width: 100vw;
@@ -209,17 +240,21 @@ header nav nav {
 }
 
 header nav nav ul:nth-of-type(1) {
-	margin-bottom: auto;
+
 	flex-direction: column;
-	margin-top: 0;
+  margin-bottom: auto;
+  margin-top: 5rem;
 }
 
 header nav nav ul:nth-of-type(2) {
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	gap: 1rem;
+	gap: 2rem;
+  width: 100%;
 }
+
+
 
 
 /* header nav nav ul:nth-of-type(2) li a, [class = "detailpagina"] main section:nth-of-type(1) ul li a {
@@ -242,6 +277,11 @@ header nav li > button {
 /* De svg's van menu, maar ook die onder de foto bij robbie williams */
 header nav nav ul:nth-of-type(2) li a svg {
 	width: 100%;
+}
+
+header nav nav ul:nth-of-type(2) li a {
+  width: 2rem;
+  display: block;
 }
 
 /* met hulp van ali, de display none etc voor de vormgeving breedte van  */
@@ -278,23 +318,50 @@ header nav nav ul:nth-of-type(2) li a svg {
 
 dialog button:nth-of-type(1) {
 	position: absolute;  
-	top: 0;
-	right: 0;
-	width: 5rem;
+	top: 1rem;
+	right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  aspect-ratio: 1/1;
+	width: 3rem;
 	border: 2px solid var(--main-text-color);
+}
+dialog button:nth-of-type(1) span {
+  position: absolute;
+  height: 2px;
+  width: 60%;
+  background-color: white;
+  left: .6rem;
+}
 
+dialog button:nth-of-type(1):hover span {
+  background-color: var(--main-color);
+}
+
+dialog button:nth-of-type(1) span:nth-of-type(1){
+  transform: rotate(45deg);
+}
+
+dialog button:nth-of-type(1) span:nth-of-type(2){
+  transform: rotate(-45deg);
+}
+
+dialog.active {
+  display: flex;
+  z-index: 99;
+  opacity: 1;
+  animation: fadeIn .2s backwards;
 }
 
 dialog {
+  display: none;
 	position: fixed;
 	width: 100vw;
 	padding:4rem;
-	top: 1rem;
-	left: 1rem;
-	right: 1rem;
-	bottom: 1rem;
+  inset: 0;
 	height: 100vh;
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	
@@ -423,7 +490,9 @@ footer a:nth-of-type(2) {
 }
 
 
-
+body.no-scroll {
+  overflow: hidden;
+} 
 
 
 /****************/
@@ -940,4 +1009,13 @@ iframe:nth-of-type(2){
 	[class = "detailpagina"] section:nth-of-type(5) article {
 		width: 20em;
 	}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
