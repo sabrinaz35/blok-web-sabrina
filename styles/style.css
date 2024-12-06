@@ -13,7 +13,7 @@
 /****************/
 /* CUSTOM PROPERTIES */
 :root {
-	/* startje */
+	/* kleuren */
 	--color-text: #111;
 	--color-background: #eee;
 	--main-color: #083ade;
@@ -88,8 +88,6 @@ h2 {
 	font-size: 1rem;
   }
 }
-
-
 
 h3 {
   text-transform: uppercase;
@@ -723,7 +721,7 @@ main section:nth-of-type(2) article {
 
 @media (width>60em) {
   main section:nth-of-type(2) article {
-    min-width: 70%;
+    min-width: 60%;
   }
 }
 

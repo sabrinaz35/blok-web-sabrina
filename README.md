@@ -222,12 +222,17 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+
+  Verschillen: 
   Hieronder zie je alle afbeeldingen van de checklist die ik heb ingevuld. Er zijn heel wat dingen verbeterd, zo is de html beter gevalidate en hebben de heading levels een veel betere volgorde dan bij de orginele site. Daarnaast is er in deze site ook beter gebruik gemaakt van unordered lists. 
+
    <img src="https://github.com/user-attachments/assets/ada104b5-6673-40f4-801f-f4df0b89bafa" height="375px" alt="De eerste pagina van de wcag checklist test">
    <img src="  https://github.com/user-attachments/assets/15aae57a-03fc-46fe-a721-fd34a988ddc6" height="375px" alt="De tweede pagina van de wcag checklist test">
    <img src="https://github.com/user-attachments/assets/3a17696a-7285-4899-8ec2-71ee2d795ccc" height="375px" alt="De derde pagina van de wcag checklist test">
    <img src="https://github.com/user-attachments/assets/5358edc6-872f-45fa-ad4c-85b303467bd4" height="375px" alt="De vierde pagina van de wcag checklist test">
    <img src="https://github.com/user-attachments/assets/3af4ac35-5862-4571-9336-651c981b1724" height="375px" alt="De vijfde pagina van de wcag checklist test">
+   
+   De directe link naar het mapje werkte voor de afbeelding niet, dus heb ik het zo met Hadil samen opgelost.
 
 
 Daarnaast zijn er nog wel wat punten die verbeterd kunnen worden om de site toegankelijk te kunnen maken door bijvoorbeeld bij de video's wel een transcriptie te zetten, of dat aan te bieden door er een button te plaatsen. 
@@ -235,8 +240,11 @@ Daarnaast zijn er nog wel wat punten die verbeterd kunnen worden om de site toeg
 Ook heb ik gemerkt met de screenreader, dat zodra hij bij de iframe van de spotify is dat hij dan daar ook heading levels in heeft. Je mag maar 1 h1 in je pagina hebben, maar daar zit er dus ook een in. Plus met de screenreader gaat hij ook elk liedje langs met een h3 en een h4. Maar er zitten vijftig nummers in de lijst, dus je hoort dit vijftig keer. Dit is natuurlijk niet echt gebruiksvriendelijk en er is ook geen mogelijkheid om dit te skippen. 
 
 Mijn stappen: 
-Daarnaast kwam ik er ook achter dat het handig is om extra aria-labels toe te voegen aan lijstjes. Zo kan de schreen reader voorlezen wat voor een lijst zij voor zich hebben.
-<img src="readme-images/ullist-arialabels.png" height="375px" alt="Screenshot code een van de hover homepagina.">
+Daarnaast kwam ik er ook achter dat het handig is om extra aria-labels toe te voegen aan lijstjes. Zo kan de schreen reader voorlezen wat voor een lijst zij voor zich hebben. Zie hieronder.
+<img src="readme-images/ullist-arialabels.png" height="375px" alt="Plaatje met daarin code, waarin ik de aria -label laat zien.">
+
+Voor de kwestie met de spotify lijst heb ik geprobeerd om een afspeellijst toe te voegen via youtube. Maar als ik dat doe krijg ik code van alleen dat nummer wat erin staat. Dus dat lukte niet.
+<img src="readme-images/proberen-afspeellijst-via-youtube.png" height="375px" alt="Screenshot van youtube, waarbij ik heb geprobeerd om de playlist in de code te krijgen.">
 
 Aanbevelingen:
 Voor de frame van spotify zou in de toekomst een skip link moeten maken, zodat je dat onderdeel kan overslaan. En je de rest van de content gewoon kan beluisteren.
@@ -280,7 +288,7 @@ In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify 
   - Over die wcag de aanbeveling noteren. Maar eventueel een design ervoor in figma maken. Nog even navragen bij Vasilis. Je moet bij je aanbeveling alleen je inzichten noteren en wat niet is gelukt en wat wel.
   - 320px beginnen met responsive en telkens met 20em kijken of het nog klopt.
   - Karakeristieken?? In de readMe wat moet daar? Ook even vragen aan Vasilis. Je moet daar screenshots van je officiele pagina plaatsen.
-  - Tabjes even naar kijken. Sneltoets formateren: cmd shift f
+  - Tabjes even naar kijken. Sneltoets formateren: cmd shift f.
 
 </details>
 
@@ -338,5 +346,8 @@ Ik heb gedurende het blok ook hulp gehad bij sommige code van Hadil en Ali.
   13. https://www.codecenter.nl/pr/tutorial/html/aflinks
   14. https://validator.w3.org/nu/#textarea 
   15. https://chatgpt.com/c/6751764b-7658-8010-91c0-0972c8e5969e  met de prompt "Waarom heeft dit een foutcode"
+  16. https://css-tricks.com/dynamic-dropdowns/ 
+  17. zhttps://www.scottohara.me/blog/2020/05/02/labelled-lists.html  
+  18. https://www.facebook.com/mojoconcerts/ 
 
 </details>
