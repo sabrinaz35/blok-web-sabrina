@@ -270,12 +270,24 @@ Als ik voor surface plane had gekozen, zou ik een aantal buttons toevoegen om zo
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify content het niet meer deed, terwijl ik wel op de container een display flex had gezet. 
+  In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify content het niet meer deed, terwijl ik wel op de container een display flex had gezet. 
    <img src="readme-images/probleem-met-justify-content.png" height="375px" alt="Screenshot code een van het probleem justify content">
    Dit element wilde ik aan het begin plaatsen, maar op de een of andere manier wilde hij dat niet doen. 
 
    Daarnaast dat ik bezig was met het maken van de tweede pagina, kan je dan gewoon gebruik maken van de code die je hebt geschreven voor de eerste pagina en dan daarna de andere dingen los noteren, die je dan extra anders wilt hebben? Of moet je dan alles opnieuw herhalen? want anders wordt het niet echt overzichtelijk. 
     <img src="readme-images/vraag-over-vormgeving.png" alt="Screenshot code met dezelfde achtergrond kleur en padding">
+
+   Ook heb ik geprobeerd te experimenteren met de has() selector door in plaats van de header een gradient te geven dit te doen door wanneer je het genre disco aanvinkt dat het dan zou gebeuren, alleen op een een of ander manier lukte dit ook niet met de has() selector. Toen heb ik dit gevraagd aan wat ik fout had gedaan aan chatGpt, (https://chatgpt.com/c/67556c41-701c-8010-8380-a4dde9b285ba) met de prompt dit is mijn animatie wat doe ik fout of wat moet ik veranderen? Toen gaf die aan dat sommige browsers dit nog niet ondersteunde.
+
+    Hieronder zie je een foto van de code in mijn css die ik had gezet alleen de selector was helemaal fout.
+  <img src="readme-images/proberen-gradien-has.pngg" width="375px" alt="Eerste poging gradient toevoegen">
+  
+   Toch wilde ik niet opgeven en heb het ook nog een keer geprobeerd op het laatste moment en weer vragen gesteld aan chat waarom het niet werkte zie bron 22 voor de prompt. Ook nogmaals even goed lezen op mdn over de has() selector. En toen werkte het wel!!!!
+
+   <img src="readme-images/gradient-op-achtergrond.png" width="375px" alt="de code van de tweede poging">
+
+  En ik ben zo ontzettend trots hierop dat dit is gelukt.
+   <img src="readme-images/gradient-aan-disco.png" width="375px" alt="Aangvinkte disco button en gradient op de achtergrond">
 
 Voordat we het feedback gesprek hadden had ik niet heel veel vragen, want ik heb de bovenstaande problemen kunnen oplossen gedurende de week.
 Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gesteld.
@@ -314,16 +326,21 @@ Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gestel
 
   ### Dit ging goed/Heb ik geleerd: 
   Tijdens dit blok heb ik ontzettend veel geleerd, ik heb geleerd hoe ik iets responsive moet maken, ik heb voor het eerst een grid gebruikt, maar ook position. Bovendien ben ik trots dat ik het zover heb geschopt met het na proberen te maken van de website. Wat wel goed ging was het schrijven van de html en de basis van de css.
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
   Ook heb ik, omdat ik het een leuk onderdeel vond om te leren een animatie erbij gevoegd, als je over de nav hovert dan komt er een bewegende gradient op de achtergrond te staan.
     <img src="readme-images/gradient-header.png" width="375px" alt="Een screenshot van de gradient in de header">
+
+ Ook heb ik geleerd om de has() selector te gebruiken, en dat heeft bij mijn idee tot iets leuks geleidt. Ik moet zeggen dat ik in de vorige opdrachten met html/css nog nooit zoveel verschillende selectoren heb gebruikt. Dus ik heb heel veel nieuwe geleerd. 
+   <img src="readme-images/gradient-aan-disco.png" width="375px" alt="Aangvinkte disco button en gradient op de achtergrond">
 
 
   ### Dit was lastig/Is niet gelukt:
   Wat ik wel wat lastig vond was de tweede site stijlen, nadat ik de eerste had gedaan, omdat ik deels wel wat kon hergebruiken, maar ook heel veel niet en als ik dan iets aanpaste veranderde er ook weer iets anders. Daardoor had ik het idee alsof er gewoon geen einde aan kwam en ik die fouten steeds maar moest blijven aanpassen. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Zoals ik eerder al benoemd heb met de has() selector dit vond ik wel een lastig onderdeel, omdat ik het steeds niet goed neerzette als selector. 
+
+
+
 </details>
 
 
@@ -361,5 +378,8 @@ Ik heb gedurende het blok ook hulp gehad bij sommige code van Hadil en Ali.
   19. https://codepen.io/Sabrina-z/pen/emONMLK 
   20.  https://codepen.io/Sabrina-z/pen/ExqGXor 
   21. https://flukeout.github.io/ 
+  22. https://chatgpt.com/c/67556c41-701c-8010-8380-a4dde9b285ba prompt: "Waarom werkt het niet?" + "ik wil dat als de label is gecheckt 
+dat een ander element op het scherm gaat die gradient krijgt zoals de header nav" + "Kan dit ook zonder javascript"
+  23. https://developer.mozilla.org/en-US/docs/Web/CSS/:has 
 
 </details>

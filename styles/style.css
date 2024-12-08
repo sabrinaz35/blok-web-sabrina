@@ -1019,7 +1019,12 @@ iframe:nth-of-type(2) {
   }
 }
 
-header nav:hover {
+/* Ik heb voor het deel hieronder met de has() selector gevraagd aan chatGPt waarom hij in eerste instantie niet 
+werkte https://chatgpt.com/c/67556c41-701c-8010-8380-a4dde9b285ba prompt: "Waarom werkt het niet?" + "ik wil dat als de label is gecheckt 
+dat een ander element op het scherm gaat die gradient krijgt zoals de header nav" + "Kan dit ook zonder javascript" Chat gaf namelijk
+een oplossing met javascript.*/
+/* Plus de bron van mdn https://developer.mozilla.org/en-US/docs/Web/CSS/:has om nogmaals die stof door te lezen */
+main:has([id="Disco"]:checked), header nav:hover {
   background-image: var(--rainbow-gradient); 
   background-size:200% 200%;
   background-position:left bottom;
@@ -1027,6 +1032,6 @@ header nav:hover {
   animation-duration:3s;
   animation-timing-function:linear;
   animation-iteration-count: infinite;
-  width: 100vw;
 }
+
 
