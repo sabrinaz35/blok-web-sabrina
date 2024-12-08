@@ -362,6 +362,8 @@ Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gestel
 
   Ook heb ik wel moeite gehad met het maken van de dialog, omdat ik er in eerste instantie de javascript gelinkt had aan een link. Uiteindelijk ben ik erachter gekomen dat ik daar een button van heb moeten maken. 
   Vooral die kleine dingetjes vind ik dat het ingewikkeld maakt, want ik je kan vaak niet meteen zien waaraan het ligt.
+
+  En het aanpassen van de spotify list, zodat het met de screenreader duidelijker is. Dat is mij ook niet gelukt.
 </details>
 
 
