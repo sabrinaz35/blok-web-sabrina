@@ -486,11 +486,12 @@ body.no-scroll {
 }
 
 /****************/
-/* De body 		*/
+/* Main 		*/
 /****************/
 /****************/
 /* Section 1	*/
 /****************/
+/* Afbeelding robbier */
 main > a:first-of-type,
 [class="detailpagina"] main section:nth-of-type(1) div {
   position: relative;
@@ -550,16 +551,15 @@ main section:nth-of-type(1) ul {
   }
 }
 
-/****************/
-/* hover	*/
-/****************/
-
 main form button:hover,
 details:hover,
 [class="detailpagina"] main section:nth-of-type(1) li > button:hover, main form fieldset button:hover  {
   background-color: var(--color-background);
   color: var(--main-color);
 }
+
+
+
 
 /****************/
 /* de form	*/
@@ -637,7 +637,7 @@ main form button {
 
 @media (width > 60em) {
   main form button {
-    width: 10%;
+    width: 100%;
   }
   main form:nth-of-type(1) fieldset > label:first-of-type input:first-of-type {
     width: 20rem;
@@ -716,6 +716,11 @@ main form fieldset details div input {
 /****************/
 /* Section 2	*/
 /****************/
+/* Binnenkort live */
+main section:nth-of-type(2) {
+  padding: 4rem 0;
+}
+
 main section:nth-of-type(2) div {
   display: flex;
   flex-direction: row;
@@ -738,9 +743,13 @@ main section:nth-of-type(2) article {
   }
 }
 
+
+
+
 /****************/
 /* Section 3	*/
 /****************/
+/* bekijk agenda voor meer */
 main section:nth-of-type(3) {
   gap: 1rem;
   align-items: flex-start;
@@ -764,9 +773,12 @@ main section:nth-of-type(3) article a > p {
   min-height: 70px;
 }
 
+
+
 /****************/
-/* Section 4	*/
+/* Laatste section	*/
 /****************/
+/* blijf op de hoogte */
 main section:last-of-type article {
   background-color: var(--main-color);
   padding: 1rem;
@@ -785,6 +797,7 @@ main section:last-of-type {
 /* Pagina 2	*/
 /* Section 1 pagina 2	*/
 /****************/
+/* afbeelding robbie williams en die socials */
 [class="detailpagina"] main section:nth-of-type(1) ul {
   padding: 1rem;
   display: flex;
@@ -839,7 +852,7 @@ main section:last-of-type {
 
 
 /****************/
-/* Section 2 video's pagina 2	*/
+/* Section 3 video's pagina 2	*/
 /****************/
 /* De youtube video + de spotify list */
 [class="detailpagina"] main div a {
@@ -875,13 +888,10 @@ iframe:nth-of-type(2) {
   }
 }
 
-
-/****************/
-/* Section 3 pagina 2*/
-/****************/
 [class="detailpagina"] main section:nth-of-type(3) {
   align-items: center;
 }
+
 
 
 /****************/
@@ -946,7 +956,6 @@ iframe:nth-of-type(2) {
   font-size: 15px;
 }
 
-/* Als hij breder wordt dan gebeurdt dit*/
 @media (width>60em) {
   [class="detailpagina"] main section:nth-of-type(4) article:last-of-type {
     display: flex;
@@ -967,7 +976,7 @@ iframe:nth-of-type(2) {
   }
 }
 
-/* De twee reclame button  */
+/* De twee reclame buttons  */
 [class="detailpagina"] main > div {
   max-width: 70vw;
   padding: 3rem;
@@ -1033,5 +1042,3 @@ main:has([id="Disco"]:checked), header nav:hover {
   animation-timing-function:linear;
   animation-iteration-count: infinite;
 }
-
-

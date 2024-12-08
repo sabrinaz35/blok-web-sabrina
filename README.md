@@ -271,23 +271,23 @@ Als ik voor surface plane had gekozen, zou ik een aantal buttons toevoegen om zo
 
   ### Stand van zaken
   In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify content het niet meer deed, terwijl ik wel op de container een display flex had gezet. 
-   <img src="readme-images/probleem-met-justify-content.png" height="375px" alt="Screenshot code een van het probleem justify content">
-   Dit element wilde ik aan het begin plaatsen, maar op de een of andere manier wilde hij dat niet doen. 
+  <img src="readme-images/probleem-met-justify-content.png" height="375px" alt="Screenshot code een van het probleem justify content">
+  Dit element wilde ik aan het begin plaatsen, maar op de een of andere manier wilde hij dat niet doen. 
 
-   Daarnaast dat ik bezig was met het maken van de tweede pagina, kan je dan gewoon gebruik maken van de code die je hebt geschreven voor de eerste pagina en dan daarna de andere dingen los noteren, die je dan extra anders wilt hebben? Of moet je dan alles opnieuw herhalen? want anders wordt het niet echt overzichtelijk. 
-    <img src="readme-images/vraag-over-vormgeving.png" alt="Screenshot code met dezelfde achtergrond kleur en padding">
+  Daarnaast dat ik bezig was met het maken van de tweede pagina, kan je dan gewoon gebruik maken van de code die je hebt geschreven voor de eerste pagina en dan daarna de andere dingen los noteren, die je dan extra anders wilt hebben? Of moet je dan alles opnieuw herhalen? want anders wordt het niet echt overzichtelijk. 
+  <img src="readme-images/vraag-over-vormgeving.png" alt="Screenshot code met dezelfde achtergrond kleur en padding">
 
-   Ook heb ik geprobeerd te experimenteren met de has() selector door in plaats van de header een gradient te geven dit te doen door wanneer je het genre disco aanvinkt dat het dan zou gebeuren, alleen op een een of ander manier lukte dit ook niet met de has() selector. Toen heb ik dit gevraagd aan wat ik fout had gedaan aan chatGpt, (https://chatgpt.com/c/67556c41-701c-8010-8380-a4dde9b285ba) met de prompt dit is mijn animatie wat doe ik fout of wat moet ik veranderen? Toen gaf die aan dat sommige browsers dit nog niet ondersteunde.
+  Ook heb ik geprobeerd te experimenteren met de has() selector door in plaats van de header een gradient te geven dit te doen door wanneer je het genre disco aanvinkt dat het dan zou gebeuren, alleen op een een of ander manier lukte dit ook niet met de has() selector. Toen heb ik dit gevraagd aan wat ik fout had gedaan aan chatGpt, (https://chatgpt.com/c/67556c41-701c-8010-8380-a4dde9b285ba) met de prompt dit is mijn animatie wat doe ik fout of wat moet ik veranderen? Toen gaf die aan dat sommige browsers dit nog niet ondersteunde.
 
-    Hieronder zie je een foto van de code in mijn css die ik had gezet alleen de selector was helemaal fout.
+  Hieronder zie je een foto van de code in mijn css die ik had gezet alleen de selector was helemaal fout.
   <img src="readme-images/proberen-gradien-has.pngg" width="375px" alt="Eerste poging gradient toevoegen">
   
    Toch wilde ik niet opgeven en heb het ook nog een keer geprobeerd op het laatste moment en weer vragen gesteld aan chat waarom het niet werkte zie bron 22 voor de prompt. Ook nogmaals even goed lezen op mdn over de has() selector. En toen werkte het wel!!!!
 
-   <img src="readme-images/gradient-op-achtergrond.png" width="375px" alt="de code van de tweede poging">
+  <img src="readme-images/gradient-op-achtergrond.png" width="375px" alt="de code van de tweede poging">
 
   En ik ben zo ontzettend trots hierop dat dit is gelukt.
-   <img src="readme-images/gradient-aan-disco.png" width="375px" alt="Aangvinkte disco button en gradient op de achtergrond">
+  <img src="readme-images/gradient-aan-disco.png" width="375px" alt="Aangvinkte disco button en gradient op de achtergrond">
 
 Voordat we het feedback gesprek hadden had ik niet heel veel vragen, want ik heb de bovenstaande problemen kunnen oplossen gedurende de week.
 Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gesteld.
@@ -321,18 +321,38 @@ Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gestel
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  Aan de linkerkant daar staat de gradient bij aan en de rechterkant zijn de pagina's normaal te zien.
+  Aan de linkerkant daar staat de gradient bij aan en de rechterkant zijn de pagina's normaal te zien. Op een mobiel formaat.
   <img src="readme-images/schermen-fed.jpg" width="375px" alt="allebei de schermen">
+
+  De onderdelen die pas zichtbaar zijn na interactie (click).
+  <img src="readme-images/klantenservice-form.png" width="375px" alt="De form om in contact te komen met de klantenservice">
+  <img src="readme-images/uitklap-menu.png" width="375px" alt="menu scherm bij het uitklappen">
+
+  karakteristieken van pagina 1:
+  <img src="readme-images/pagina1-karakteristieken.png" width="375px" alt="zoek menu balk">
+  <img src="readme-images/pagina1-karakteristieken2.png" width="375px" alt="Gradient op de achtergrond">
+
+    Hieronder zie je een slider met daarin verschillende concerten die live te zien zijn. 
+  <img src="readme-images/binnenkort-live-slider.png" width="375px" alt="Een slider met daarin de verschillende concerten binnenkort">
+  <img src="readme-images/de-agenda-pagina1.png" width="375px" alt="Een lijst met aankomende concerten dat op de agenda staat">
+
+
+  karaktristieken van pagina 2:
+  <img src="readme-images/pagina2-karakteristieken.png" width="375px" alt="socials en inleidende tekst van robbie williams">
+  <img src="readme-images/kijkenluister-pagina2.png" width="375px" alt="een video en een spotify lijst">
+  <img src="readme-images/pagina2-karakteristieken2.png" width="375px" alt="koop menu van de tickets pagina twee">
+  <img src="readme-images/in-de-zaal.pngg" width="375px" alt="Regelementen wat er in de zaal mag en wat niet>
+
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Tijdens dit blok heb ik ontzettend veel geleerd, ik heb geleerd hoe ik iets responsive moet maken, ik heb voor het eerst een grid gebruikt, maar ook position. Bovendien ben ik trots dat ik het zover heb geschopt met het na proberen te maken van de website. Wat wel goed ging was het schrijven van de html en de basis van de css.
 
   Ook heb ik, omdat ik het een leuk onderdeel vond om te leren een animatie erbij gevoegd, als je over de nav hovert dan komt er een bewegende gradient op de achtergrond te staan.
-    <img src="readme-images/gradient-header.png" width="375px" alt="Een screenshot van de gradient in de header">
+  <img src="readme-images/gradient-header.png" width="375px" alt="Een screenshot van de gradient in de header">
 
- Ook heb ik geleerd om de has() selector te gebruiken, en dat heeft bij mijn idee tot iets leuks geleidt. Ik moet zeggen dat ik in de vorige opdrachten met html/css nog nooit zoveel verschillende selectoren heb gebruikt. Dus ik heb heel veel nieuwe geleerd. 
-   <img src="readme-images/gradient-aan-disco.png" width="375px" alt="Aangvinkte disco button en gradient op de achtergrond">
+  Ook heb ik geleerd om de has() selector te gebruiken, en dat heeft bij mijn idee tot iets leuks geleidt. Ik moet zeggen dat ik in de vorige opdrachten met html/css nog nooit zoveel verschillende selectoren heb gebruikt. Dus ik heb heel veel nieuwe geleerd. 
+  <img src="readme-images/gradient-aan-disco.png" width="375px" alt="Aangvinkte disco button en gradient op de achtergrond">
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -340,8 +360,8 @@ Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gestel
 
   Zoals ik eerder al benoemd heb met de has() selector dit vond ik wel een lastig onderdeel, omdat ik het steeds niet goed neerzette als selector. 
 
-
-
+  Ook heb ik wel moeite gehad met het maken van de dialog, omdat ik er in eerste instantie de javascript gelinkt had aan een link. Uiteindelijk ben ik erachter gekomen dat ik daar een button van heb moeten maken. 
+  Vooral die kleine dingetjes vind ik dat het ingewikkeld maakt, want ik je kan vaak niet meteen zien waaraan het ligt.
 </details>
 
 
