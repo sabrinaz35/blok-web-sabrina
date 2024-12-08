@@ -321,7 +321,8 @@ Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gestel
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  Aan de linkerkant daar staat de gradient bij aan en de rechterkant zijn de pagina's normaal te zien.
+  <img src="readme-images/schermen-fed.jpg" width="375px" alt="allebei de schermen">
 
 
   ### Dit ging goed/Heb ik geleerd: 
