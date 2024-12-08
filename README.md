@@ -341,7 +341,7 @@ Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gestel
   <img src="readme-images/pagina2-karakteristieken.png" width="375px" alt="socials en inleidende tekst van robbie williams">
   <img src="readme-images/kijkenluister-pagina2.png" width="375px" alt="een video en een spotify lijst">
   <img src="readme-images/pagina2-karakteristieken2.png" width="375px" alt="koop menu van de tickets pagina twee">
-  <img src="readme-images/in-de-zaal.pngg" width="375px" alt="Regelementen wat er in de zaal mag en wat niet>
+<img src="readme-images/in-de-zaal.png" width="375px" alt="Regelementen wat er in de zaal mag en wat niet">
 
 
 
