@@ -227,7 +227,7 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
   Hieronder zie je alle afbeeldingen van de checklist die ik heb ingevuld. Er zijn heel wat dingen verbeterd, zo is de html beter gevalidate en hebben de heading levels een veel betere volgorde dan bij de orginele site. Daarnaast is er in deze site ook beter gebruik gemaakt van unordered lists. 
 
    <img src="https://github.com/user-attachments/assets/ada104b5-6673-40f4-801f-f4df0b89bafa" height="375px" alt="De eerste pagina van de wcag checklist test">
-   <img src="  https://github.com/user-attachments/assets/15aae57a-03fc-46fe-a721-fd34a988ddc6" height="375px" alt="De tweede pagina van de wcag checklist test">
+   <img src="https://github.com/user-attachments/assets/15aae57a-03fc-46fe-a721-fd34a988ddc6" height="375px" alt="De tweede pagina van de wcag checklist test">
    <img src="https://github.com/user-attachments/assets/3a17696a-7285-4899-8ec2-71ee2d795ccc" height="375px" alt="De derde pagina van de wcag checklist test">
    <img src="https://github.com/user-attachments/assets/5358edc6-872f-45fa-ad4c-85b303467bd4" height="375px" alt="De vierde pagina van de wcag checklist test">
    <img src="https://github.com/user-attachments/assets/3af4ac35-5862-4571-9336-651c981b1724" height="375px" alt="De vijfde pagina van de wcag checklist test">
