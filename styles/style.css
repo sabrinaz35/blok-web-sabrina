@@ -978,7 +978,7 @@ iframe:nth-of-type(2) {
 /****************/
 /* Animatie	*/
 /****************/
-/* @keyframes discorainbow {
+@keyframes discorainbow {
   0% {
     background-position: 0% 0%;
   }
@@ -987,13 +987,13 @@ iframe:nth-of-type(2) {
   }
 }
 
-mmain form fieldset details:nth-of-type(2) label:has([id="Disco"]:checked) *{
+main form fieldset details:nth-of-type(2) label:has([id="Disco"]:checked) details{
   background-image: var(--rainbow-gradient);
   background-size:200% 200%;
   background-position:left bottom;
-  animation-name: disco-rainbow;
+  animation-name: discorainbow;
   animation-duration:1s;
   animation-timing-function:linear;
   animation-iteration-count: infinite;
-} */
+}
 
