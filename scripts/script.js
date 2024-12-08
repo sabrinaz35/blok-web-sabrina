@@ -3,11 +3,14 @@ console.log("hi");
 
 
 // Tevoorschijn laten komen van het menu en ook weer sluiten ervan
+//variabelen/constanten
 const headerEl = document.querySelector('header')
 const menuButton = document.querySelector("header nav:first-of-type button");
 let deNav = document.querySelector("header nav nav");
 const bodyEl = document.body 
+const closeMenuButton = document.querySelector("ul:nth-of-type(1) button");
 
+//het openen van de menu
 menuButton.addEventListener("click",openMenu);
 
 function openMenu(){
@@ -18,8 +21,8 @@ function openMenu(){
 
 console.log(menuButton)
 
-const closeMenuButton = document.querySelector("ul:nth-of-type(1) button");
 
+//het sluiten van het menu
 closeMenuButton.addEventListener("click", closeMenu);
 
 function closeMenu(){
@@ -27,8 +30,10 @@ function closeMenu(){
 }
 
 
+
+
 //Code voor het scrollen en een achtergrond krijgen van de header, zodra er gescrollt wordt. 
-//Dit hbe ik met behulp van Ali geschreven
+//Dit heb ik met behulp van Ali geschreven
 
 window.addEventListener('scroll', ()=>{
     if (scrollY > 10){
@@ -47,12 +52,12 @@ const klantenserviceButtonClose = document.querySelector ("dialog button:nth-of-
 
 console.log(klantenserviceButtonOpen);
 
-
+// Code voor het openen
 klantenserviceButtonOpen.addEventListener("click", ()=> {
       klantenServiceDialog.classList.add('active')
 });
 
-
+// Code voor de close button
 if(klantenserviceButtonClose){
 klantenserviceButtonClose.addEventListener("click",  ()=> {
   klantenServiceDialog.classList.remove('active')

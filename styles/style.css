@@ -855,11 +855,11 @@ main section:last-of-type {
 /* Section 3 video's pagina 2	*/
 /****************/
 /* De youtube video + de spotify list */
-[class="detailpagina"] main div a {
+[class="detailpagina"] main div a, [class="detailpagina"] main section:nth-of-type(5) a{
   max-width: 30%;
 }
 
-[class="detailpagina"] main div {
+[class="detailpagina"] main div, [class="detailpagina"] main section:nth-of-type(5) {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -879,7 +879,7 @@ iframe:nth-of-type(2) {
 }
 
 @media (width > 60em) {
-  [class="detailpagina"] main div {
+  [class="detailpagina"] main div, [class="detailpagina"] main section:nth-of-type(5) {
     width: 90vw;
   }
   iframe {
@@ -977,11 +977,14 @@ iframe:nth-of-type(2) {
 }
 
 /* De twee reclame buttons  */
-[class="detailpagina"] main > div {
+[class="detailpagina"] main section:nth-of-type(5) {
   max-width: 70vw;
   padding: 3rem;
 }
 
+[class="detailpagina"] main section:nth-of-type(5) h2 {
+  display: none;
+}
 
 
 /****************/
@@ -989,23 +992,23 @@ iframe:nth-of-type(2) {
 /****************/
 /* In de zaal section */
 
-[class="detailpagina"] section:nth-of-type(5) {
+[class="detailpagina"] section:nth-of-type(6) {
   gap: 2rem;
 }
 
 @media (width > 60em) {
   /* https://cssgrid-generator.netlify.app/ gebruikt om te kijken wat de grid moet worden, gebruikt op advies van Hadil*/
-  [class="detailpagina"] section:nth-of-type(5) {
+  [class="detailpagina"] section:nth-of-type(6) {
     display: grid;
     width: 50em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-  [class="detailpagina"] section:nth-of-type(5) h2 {
+  [class="detailpagina"] section:nth-of-type(6) h2 {
     grid-area: 1 / 1 / 2 / 3;
     text-align: center;
   }
-  [class="detailpagina"] section:nth-of-type(5) article {
+  [class="detailpagina"] section:nth-of-type(6) article {
     width: 20em;
   }
 }
