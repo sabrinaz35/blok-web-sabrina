@@ -313,11 +313,11 @@ Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gestel
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Tijdens dit blok heb ik ontzettend veel geleerd, ik heb geleerd hoe ik iets responsive moet maken, ik heb voor het eerst een grid gebruikt, maar ook position. Bovendien ben ik trots dat ik het zover heb geshcopt met het na proberen te maken van de website. Wat wel goed ging was het schrijven van de html en de basis van de css.
-
+  Tijdens dit blok heb ik ontzettend veel geleerd, ik heb geleerd hoe ik iets responsive moet maken, ik heb voor het eerst een grid gebruikt, maar ook position. Bovendien ben ik trots dat ik het zover heb geschopt met het na proberen te maken van de website. Wat wel goed ging was het schrijven van de html en de basis van de css.
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
 
-  Ook heb ik, omdat ik het een leuk onderdeel vond om te leren een animatie erbij gevoegd,
+  Ook heb ik, omdat ik het een leuk onderdeel vond om te leren een animatie erbij gevoegd, als je over de nav hovert dan komt er een bewegende gradient op de achtergrond te staan.
+    <img src="readme-images/gradient-header.png" width="375px" alt="Een screenshot van de gradient in de header">
 
 
   ### Dit was lastig/Is niet gelukt:

@@ -179,6 +179,7 @@ header nav a {
   display: block;
   width: 7rem;
   margin: 0 auto;
+  transition: .3s;
 }
 
 header nav button span:nth-of-type(1) {
@@ -271,6 +272,7 @@ header nav li > button {
   background-color: transparent;
   border: none;
   font-weight: bold;
+  transition: .3s;
 }
 
 /* De svg's van menu, maar ook die onder de foto bij robbie williams */
@@ -304,12 +306,16 @@ header nav nav ul:nth-of-type(2) li a {
   }
 }
 
+/* Hover bij de nav tekst */
+header nav ul li a:hover, header nav ul li button:hover {
+  transform: scale(1.2);
+}
+
 /****************/
 /* Kantenservice dialog	*/
 /****************/
 /* Deze code heb ik met behulp van de opdrachten js3 geschreven */
 /* https://codepen.io/Sabrina-z/pen/pvzzrev */
-
 dialog button:nth-of-type(1) {
   position: absolute;
   top: 1rem;
@@ -328,6 +334,7 @@ dialog button:nth-of-type(1) span {
   width: 60%;
   background-color: white;
   left: 0.6rem;
+  transition: .3s;
 }
 
 dialog button:nth-of-type(1):hover span {
@@ -549,7 +556,7 @@ main section:nth-of-type(1) ul {
 
 main form button:hover,
 details:hover,
-[class="detailpagina"] main section:nth-of-type(1) li > button:hover {
+[class="detailpagina"] main section:nth-of-type(1) li > button:hover, main form fieldset button:hover  {
   background-color: var(--color-background);
   color: var(--main-color);
 }
@@ -625,6 +632,7 @@ main form button {
   width: 100%;
   font-size: 20px;
   padding: 1rem;
+  transition: .3s;
 }
 
 @media (width > 60em) {
@@ -638,6 +646,7 @@ main form button {
 
 main form fieldset details {
   padding: 1em;
+  transition: .3s;
 }
 
 @media (width > 60em) {
@@ -653,6 +662,10 @@ main form fieldset button:nth-of-type(1) {
   padding: 1rem;
 }
 
+main form fieldset button {
+  transition: .3s;
+}
+
 @media (width > 60em) {
   main form fieldset button:nth-of-type(1) {
     width: 20rem;
@@ -661,11 +674,6 @@ main form fieldset button:nth-of-type(1) {
 
 main form fieldset button:nth-of-type(1)>span {
   font-size: 16px;
-}
-
-main form fieldset button:hover {
-  background-color: var(--color-background);
-  color: #083ade;
 }
 
 main form fieldset button svg {
@@ -681,7 +689,6 @@ main form fieldset button p {
 main form fieldset button:hover svg {
   fill: #083ade;
 }
-
 
 main form fieldset details div {
   position: absolute;
@@ -787,7 +794,7 @@ main section:last-of-type {
 
 /* De selector :not heb ik van de oefening bento https://flukeout.github.io/ */
 [class="detailpagina"] main section:nth-of-type(1) ul li:not(:last-of-type) {
-  max-width: 5%;
+  max-width: 3%;
 }
 
 [class="detailpagina"] main section:nth-of-type(1) li > button {
@@ -911,6 +918,13 @@ iframe:nth-of-type(2) {
   color: var(--main-color);
   font-weight: bold;
   border: none;
+  transition: .5s;
+}
+
+[class="detailpagina"] main section:nth-of-type(4) article:last-of-type button:hover {
+  background-color: var(--main-color);
+  color: var(--main-text-color);
+  border: 2px solid var(--main-text-color);
 }
 
 [class="detailpagina"] main section:nth-of-type(4) article:last-of-type div {
