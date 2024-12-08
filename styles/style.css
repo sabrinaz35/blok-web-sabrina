@@ -24,12 +24,15 @@
 	/* Hue saturation lightness en aa */
   --rainbow-gradient:linear-gradient(
     40deg,
-    orange,
-    hotpink,
-    crimson,
-    purple,
-    yellow,
-    orange
+    #083ade,
+    #304fb8,
+    #202f61,
+    #7d91d4,
+    #083ade,
+    #7d91d4,
+    #202f61,
+    #304fb8,
+    #083ade
   )
   }
   
@@ -93,7 +96,7 @@ h2 {
 @media (width<360px) {
   h2 {
     font-size: 21px;
-  } p {
+  } p, summary {
 	font-size: 1rem;
   }
 }
@@ -302,9 +305,8 @@ header nav nav ul:nth-of-type(2) li a {
 }
 
 /****************/
-/* Kantenservice	*/
+/* Kantenservice dialog	*/
 /****************/
-
 /* Deze code heb ik met behulp van de opdrachten js3 geschreven */
 /* https://codepen.io/Sabrina-z/pen/pvzzrev */
 
@@ -344,16 +346,6 @@ dialog.active {
   display: flex;
   z-index: 99;
   opacity: 1;
-  animation: fadeIn 0.2s backwards;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 dialog {
@@ -365,11 +357,9 @@ dialog {
   height: 100vh;
   flex-direction: column;
   justify-content: center;
-
   background: var(--main-color);
   border: none;
   color: white;
-
   overflow: visible;
 }
 
@@ -578,13 +568,13 @@ main > form:nth-of-type(1) {
   transform: translateY(-2em);
 }
 
-@media (width > 60em) {
+@media (width > 1009px) {
   /* De responsiveness van de form */
   main > form {
     display: flex;
     justify-content: space-around;
     width: 90vw;
-  }
+  } 
 }
 
 @media (width > 60em) {
@@ -779,31 +769,15 @@ main section:last-of-type {
   max-width: 50em;
   text-align: center;
   padding: 1rem;
+  margin: 1rem 0rem;
 }
+
+
 
 /****************/
 /* Pagina 2	*/
-/****************/
-
-/****************/
-/* main pagina 2	*/
-/****************/
-
-[class="detailpagina"] main > div {
-  max-width: 70vw;
-  padding: 3rem;
-}
-
-/* Deze beide hebben dezelfde aligning nodig vandaar bij elkaar gezet */
-[class="detailpagina"] main, [class="detailpagina"] main section:nth-of-type(3) {
-  align-items: center;
-}
-
-/****************/
 /* Section 1 pagina 2	*/
 /****************/
-/* alleen de position aanpassen, ik weet niet of dit de juiste manier is, of is er een makkelijkere manier voor*/
-
 [class="detailpagina"] main section:nth-of-type(1) ul {
   padding: 1rem;
   display: flex;
@@ -811,6 +785,7 @@ main section:last-of-type {
   align-items: center;
 }
 
+/* De selector :not heb ik van de oefening bento https://flukeout.github.io/ */
 [class="detailpagina"] main section:nth-of-type(1) ul li:not(:last-of-type) {
   max-width: 5%;
 }
@@ -854,9 +829,12 @@ main section:last-of-type {
   }
 }
 
+
+
 /****************/
 /* Section 2 video's pagina 2	*/
 /****************/
+/* De youtube video + de spotify list */
 [class="detailpagina"] main div a {
   max-width: 30%;
 }
@@ -890,9 +868,19 @@ iframe:nth-of-type(2) {
   }
 }
 
+
+/****************/
+/* Section 3 pagina 2*/
+/****************/
+[class="detailpagina"] main section:nth-of-type(3) {
+  align-items: center;
+}
+
+
 /****************/
 /* Section 4 pagina 2*/
 /****************/
+/* De verkoop section */
 [class="detailpagina"] main section:nth-of-type(4) {
   gap: 1rem;
 }
@@ -911,7 +899,7 @@ iframe:nth-of-type(2) {
   text-decoration: underline;
 }
 
-[class="detailpagina"] main section:nth-of-type(4) article:last-of-type {
+[class="detailpagina"] main section:nth-of-type(4)>article:last-of-type {
   background-color: var(--main-color);
   padding: 1rem;
 }
@@ -925,11 +913,26 @@ iframe:nth-of-type(2) {
   border: none;
 }
 
-[class="detailpagina"] main section:nth-of-type(4) article:last-of-type article:last-of-type div {
+[class="detailpagina"] main section:nth-of-type(4) article:last-of-type div {
   flex-direction: column;
   align-items: flex-start;
+  min-width: 20%;
 }
 
+[class="detailpagina"] main section:nth-of-type(4) article:last-of-type div p {
+  padding: .5rem 0rem;
+}
+
+[class="detailpagina"] main section:nth-of-type(4) article:last-of-type div p:nth-of-type(4) {
+  font-weight: bold;
+}
+
+
+[class="detailpagina"] main section:nth-of-type(4) article:last-of-type div p:last-of-type {
+  font-size: 15px;
+}
+
+/* Als hij breder wordt dan gebeurdt dit*/
 @media (width>60em) {
   [class="detailpagina"] main section:nth-of-type(4) article:last-of-type {
     display: flex;
@@ -946,12 +949,23 @@ iframe:nth-of-type(2) {
     flex-direction: row;
     gap: 1.5rem;
     padding-top: 50px;
+    width: 70vw;
   }
 }
+
+/* De twee reclame button  */
+[class="detailpagina"] main > div {
+  max-width: 70vw;
+  padding: 3rem;
+}
+
+
 
 /****************/
 /* Section 5 pagina 2	*/
 /****************/
+/* In de zaal section */
+
 [class="detailpagina"] section:nth-of-type(5) {
   gap: 2rem;
 }
@@ -978,22 +992,27 @@ iframe:nth-of-type(2) {
 /****************/
 /* Animatie	*/
 /****************/
+/* Deze code heb ik geschreven met behup van de huiswerk opdrachten */
+/* https://codepen.io/Sabrina-z/pen/emONMLK */
+/* https://codepen.io/Sabrina-z/pen/ExqGXor */
+/* Ali heeft mij toen geholpen bij die opdrachten, gradient zelf kan niet bewegen, maar een background image wel */
 @keyframes discorainbow {
   0% {
-    background-position: 0% 0%;
+    background-position: left bottom;
   }
   100% {
-    background-position: 100% 100%;
+    background-position: right top;
   }
 }
 
-main form fieldset details:nth-of-type(2) label:has([id="Disco"]:checked) details{
-  background-image: var(--rainbow-gradient);
+header nav:hover {
+  background-image: var(--rainbow-gradient); 
   background-size:200% 200%;
   background-position:left bottom;
   animation-name: discorainbow;
-  animation-duration:1s;
+  animation-duration:3s;
   animation-timing-function:linear;
   animation-iteration-count: infinite;
+  width: 100vw;
 }
 

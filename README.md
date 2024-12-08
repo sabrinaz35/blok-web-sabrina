@@ -232,7 +232,7 @@ Als laatste heb ik moeite met mijn fieldset, daarbij heb ik een hover gemaakt, m
    <img src="https://github.com/user-attachments/assets/5358edc6-872f-45fa-ad4c-85b303467bd4" height="375px" alt="De vierde pagina van de wcag checklist test">
    <img src="https://github.com/user-attachments/assets/3af4ac35-5862-4571-9336-651c981b1724" height="375px" alt="De vijfde pagina van de wcag checklist test">
    
-   De directe link naar het mapje werkte voor de afbeelding niet, dus heb ik het zo met Hadil samen opgelost.
+De directe link naar het mapje werkte voor de afbeelding niet, dus heb ik het zo met Hadil samen opgelost.
 
 
 Daarnaast zijn er nog wel wat punten die verbeterd kunnen worden om de site toegankelijk te kunnen maken door bijvoorbeeld bij de video's wel een transcriptie te zetten, of dat aan te bieden door er een button te plaatsen. 
@@ -246,10 +246,16 @@ Daarnaast kwam ik er ook achter dat het handig is om extra aria-labels toe te vo
 Voor de kwestie met de spotify lijst heb ik geprobeerd om een afspeellijst toe te voegen via youtube. Maar als ik dat doe krijg ik code van alleen dat nummer wat erin staat. Dus dat lukte niet.
 <img src="readme-images/proberen-afspeellijst-via-youtube.png" height="375px" alt="Screenshot van youtube, waarbij ik heb geprobeerd om de playlist in de code te krijgen.">
 
+Ook werden de i frames niet duidelijk voorgelezen met de screenreader en voornamelijk de spotify lijst die werd overgeslagen, ik vermoed omdat het een link is, want daar liep ik tegen dat andere probleem aan. Dus ik heb bij die twee elementen een unieke aria-abel gegeven zodat ze goed worden voorgelezen met de sceenreader.
+<img src="readme-images/aria-label-i-frame.png" height="375px" alt="Screenshot van code uit html met de aria-abels bij de iframes.">
+
 Aanbevelingen:
 Voor de frame van spotify zou in de toekomst een skip link moeten maken, zodat je dat onderdeel kan overslaan. En je de rest van de content gewoon kan beluisteren.
+Ook zou er eentje boven in de pagina bij de detailpagina, zodat ze meteen tickets kunnen kopen voor hun uitgekozen artiest. Anders moeten ze eerst door alle informatie gaan voordat ze eindelijk tickets kunnen bemachtigen. En met het kopen van tickets tellen die seconden, want bij de meeste ticketssales zijn de tickets al binnen een paar minuten uitverkocht (Dit weet ik uit uit ervaring).
 
-Ook als mensen een transcriptie voor de video willen zou dat ook beschikbaar moeten zijn. 
+
+Ook als mensen een transcriptie voor de video willen zou dat ook beschikbaar moeten zijn. Dit zou opgelost kunnen worden door een button te plaatsen. Alhoewel er in de video wel een button staat, maar deze kan je helemaal niet gebruiken.
+
 Als ik voor surface plane had gekozen, zou ik een aantal buttons toevoegen om zo verschillende opties te bieden om de site nog toegangelijker te maken, zoals bijvoorbeeld een lichte interface inplaats van het donkerblauwe achtergrond wat er nu is. 
 
 </details>
@@ -271,6 +277,8 @@ In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify 
    Daarnaast dat ik bezig was met het maken van de tweede pagina, kan je dan gewoon gebruik maken van de code die je hebt geschreven voor de eerste pagina en dan daarna de andere dingen los noteren, die je dan extra anders wilt hebben? Of moet je dan alles opnieuw herhalen? want anders wordt het niet echt overzichtelijk. 
     <img src="readme-images/vraag-over-vormgeving.png" alt="Screenshot code met dezelfde achtergrond kleur en padding">
 
+Voordat we het feedback gesprek hadden had ik niet heel veel vragen, want ik heb de bovenstaande problemen kunnen oplossen gedurende de week.
+Daarnaast had ik enkel wat vragen over dit readMe bestand en heb deze ook gesteld.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -289,7 +297,6 @@ In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify 
   - 320px beginnen met responsive en telkens met 20em kijken of het nog klopt.
   - Karakeristieken?? In de readMe wat moet daar? Ook even vragen aan Vasilis. Je moet daar screenshots van je officiele pagina plaatsen.
   - Tabjes even naar kijken. Sneltoets formateren: cmd shift f.
-
 </details>
 
 
@@ -309,6 +316,8 @@ In de loop van deze week liep ik ineens tegen een probleem aan dat mijn justify 
   Tijdens dit blok heb ik ontzettend veel geleerd, ik heb geleerd hoe ik iets responsive moet maken, ik heb voor het eerst een grid gebruikt, maar ook position. Bovendien ben ik trots dat ik het zover heb geshcopt met het na proberen te maken van de website. Wat wel goed ging was het schrijven van de html en de basis van de css.
 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+
+  Ook heb ik, omdat ik het een leuk onderdeel vond om te leren een animatie erbij gevoegd,
 
 
   ### Dit was lastig/Is niet gelukt:
@@ -349,5 +358,8 @@ Ik heb gedurende het blok ook hulp gehad bij sommige code van Hadil en Ali.
   16. https://css-tricks.com/dynamic-dropdowns/ 
   17. zhttps://www.scottohara.me/blog/2020/05/02/labelled-lists.html  
   18. https://www.facebook.com/mojoconcerts/ 
+  19. https://codepen.io/Sabrina-z/pen/emONMLK 
+  20.  https://codepen.io/Sabrina-z/pen/ExqGXor 
+  21. https://flukeout.github.io/ 
 
 </details>
